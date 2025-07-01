@@ -154,11 +154,7 @@ target_include_directories(roptlite
 # file(GLOB PUBLIC_HEADERS ./*.h)
 # set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER "${PUBLIC_HEADERS}")
 
-# install header files
-install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/
-		DESTINATION ${ROPTLIB_INSTALL_INCLUDEDIR}
-		FILES_MATCHING PATTERN "*.h"
-		)
+
 
 
 # if(ENABLE_COVERAGE)

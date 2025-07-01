@@ -16,6 +16,14 @@ add_compile_options(-march=native) # Enable faster instruction sets
 include(GNUInstallDirs)
 set(ROPTLIB_INSTALL_INCLUDEDIR ${CMAKE_INSTALL_INCLUDEDIR}/roptlite)
 
+
+
+# # Directory for built libraries
+# set(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR}/lib CACHE PATH "The directory in which to place libraries built by this project")
+# # Directory for built executables
+# set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR}/bin CACHE PATH "The directory in which to place executables built by this project")
+
+
 # roptlite requires lapack, blas, and m libraries
 find_library(LAPACK lapack DOC "LAPACK library to link against")
 find_library(BLAS blas DOC "BLAS library to link against")
@@ -57,7 +65,12 @@ configure_package_config_file(
         ${CMAKE_CURRENT_BINARY_DIR}/roptlibTargets.cmake
   DESTINATION share/roptlite/cmake)
 
-
+# install header files
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/
+		DESTINATION ${ROPTLIB_INSTALL_INCLUDEDIR}
+		FILES_MATCHING PATTERN "*.h"
+		)
+        
 # if(ENABLE_COVERAGE)
 #   add_coverage(surchem)
 # endif()
