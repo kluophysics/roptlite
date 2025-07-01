@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int slasrt_(char *id, integer *n, real *d__, integer *info);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

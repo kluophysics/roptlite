@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int zspr_(char *uplo, integer *n, doublecomplex *alpha, doublecomplex *x, integer *incx, doublecomplex *ap);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

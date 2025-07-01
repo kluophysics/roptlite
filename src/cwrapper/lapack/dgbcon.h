@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int dgbcon_(char *norm, integer *n, integer *kl, integer *ku, doublereal *ab, integer *ldab, integer *ipiv, doublereal *anorm, doublereal *rcond, doublereal *work, integer *iwork, integer *info);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

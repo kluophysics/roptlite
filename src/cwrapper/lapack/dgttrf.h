@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int dgttrf_(integer *n, doublereal *dl, doublereal *d__, doublereal *du, doublereal *du2, integer *ipiv, integer *info);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

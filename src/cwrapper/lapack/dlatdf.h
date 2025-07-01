@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int dlatdf_(integer *ijob, integer *n, doublereal *z__, integer *ldz, doublereal *rhs, doublereal *rdsum, doublereal *rdscal, integer *ipiv, integer *jpiv);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

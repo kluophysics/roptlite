@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int clargv_(integer *n, complex *x, integer *incx, complex *y, integer *incy, real *c__, integer *incc);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

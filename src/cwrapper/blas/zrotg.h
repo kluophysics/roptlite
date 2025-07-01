@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int zrotg_(doublecomplex *ca, doublecomplex *cb, doublereal *c__, doublecomplex *s);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

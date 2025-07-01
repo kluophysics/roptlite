@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int clacpy_(char *uplo, integer *m, integer *n, complex *a, integer *lda, complex *b, integer *ldb);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

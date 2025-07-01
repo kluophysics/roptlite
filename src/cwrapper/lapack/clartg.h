@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int clartg_(complex *f, complex *g, real *cs, complex *sn, complex *r__);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

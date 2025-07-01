@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int zlacon_(integer *n, doublecomplex *v, doublecomplex *x, doublereal *est, integer *kase);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

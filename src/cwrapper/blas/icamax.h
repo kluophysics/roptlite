@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 integer icamax_(integer *n, complex *cx, integer *incx);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

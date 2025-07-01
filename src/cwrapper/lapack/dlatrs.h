@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int dlatrs_(char *uplo, char *trans, char *diag, char *normin, integer *n, doublereal *a, integer *lda, doublereal *x, doublereal *scale, doublereal *cnorm, integer *info);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 C_f cladiv_(complex * ret_val, complex *x, complex *y);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

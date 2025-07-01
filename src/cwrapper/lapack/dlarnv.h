@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int dlarnv_(integer *idist, integer *iseed, integer *n, doublereal *x);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int dgghrd_(char *compq, char *compz, integer *n, integer *ilo, integer *ihi, doublereal *a, integer *lda, doublereal *b, integer *ldb, doublereal *q, integer *ldq, doublereal *z__, integer *ldz, integer *info);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

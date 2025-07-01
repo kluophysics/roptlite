@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int caxpy_(integer *n, complex *ca, complex *cx, integer *incx, complex *cy, integer *incy);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

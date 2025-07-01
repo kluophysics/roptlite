@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int sptts2_(integer *n, integer *nrhs, real *d__, real *e, real *b, integer *ldb);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

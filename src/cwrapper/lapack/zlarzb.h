@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int zlarzb_(char *side, char *trans, char *direct, char *storev, integer *m, integer *n, integer *k, integer *l, doublecomplex *v, integer *ldv, doublecomplex *t, integer *ldt, doublecomplex *c__, integer *ldc, doublecomplex *work, integer *ldwork);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

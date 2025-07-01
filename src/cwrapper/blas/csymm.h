@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int csymm_(char *side, char *uplo, integer *m, integer *n, complex *alpha, complex *a, integer *lda, complex *b, integer *ldb, complex *beta, complex *c__, integer *ldc);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

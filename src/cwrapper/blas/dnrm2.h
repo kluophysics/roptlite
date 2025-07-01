@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 doublereal dnrm2_(integer *n, doublereal *x, integer *incx);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

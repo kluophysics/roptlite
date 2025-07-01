@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 integer ieeeck_(integer *ispec, real *zero, real *one);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

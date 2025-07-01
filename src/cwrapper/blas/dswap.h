@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int dswap_(integer *n, doublereal *dx, integer *incx, doublereal *dy, integer *incy);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

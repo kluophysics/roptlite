@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int clacon_(integer *n, complex *v, complex *x, real *est, integer *kase);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

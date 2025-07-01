@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 doublereal dlangt_(char *norm, integer *n, doublereal *dl, doublereal *d__, doublereal *du);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

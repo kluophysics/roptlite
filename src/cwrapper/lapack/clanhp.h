@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 E_f clanhp_(char *norm, char *uplo, integer *n, complex *ap, real *work);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

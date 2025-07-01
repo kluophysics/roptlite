@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int srot_(integer *n, real *sx, integer *incx, real *sy, integer *incy, real *c__, real *s);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int dlapmt_(logical *forwrd, integer *m, integer *n, doublereal *x, integer *ldx, integer *k);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

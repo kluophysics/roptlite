@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int slapll_(integer *n, real *x, integer *incx, real *y, integer *incy, real *ssmin);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 E_f slapy3_(real *x, real *y, real *z__);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int clatrz_(integer *m, integer *n, integer *l, complex *a, integer *lda, complex *tau, complex *work);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

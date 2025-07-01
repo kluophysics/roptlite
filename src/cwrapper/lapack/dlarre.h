@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int dlarre_(integer *n, doublereal *d__, doublereal *e, doublereal *tol, integer *nsplit, integer *isplit, integer *m, doublereal *w, doublereal *woff, doublereal *gersch, doublereal *work, integer *info);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

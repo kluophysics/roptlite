@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int clarfg_(integer *n, complex *alpha, complex *x, integer *incx, complex *tau);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

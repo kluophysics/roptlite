@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int dlagtf_(integer *n, doublereal *a, doublereal *lambda, doublereal *b, doublereal *c__, doublereal *tol, doublereal *d__, integer *in, integer *info);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

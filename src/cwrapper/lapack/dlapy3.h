@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 doublereal dlapy3_(doublereal *x, doublereal *y, doublereal *z__);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

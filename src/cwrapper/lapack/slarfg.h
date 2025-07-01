@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int slarfg_(integer *n, real *alpha, real *x, integer *incx, real *tau);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

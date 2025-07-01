@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int chpr_(char *uplo, integer *n, real *alpha, complex *x, integer *incx, complex *ap);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

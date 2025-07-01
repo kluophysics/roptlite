@@ -49,7 +49,7 @@
 
 #include <stdio.h>
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C"
 {
 #endif /* __cplusplus */
@@ -408,7 +408,7 @@ FFTW_DEFINE_API(FFTW_MANGLE_QUAD, __float128, fftwq_complex)
 #define FFTW_NO_FIXED_RADIX_LARGE_N (1U << 19)
 #define FFTW_ALLOW_PRUNING (1U << 20)
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }  /* extern "C" */
 #endif /* __cplusplus */
 

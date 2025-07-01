@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int clagtm_(char *trans, integer *n, integer *nrhs, real *alpha, complex *dl, complex *d__, complex *du, complex *x, integer *ldx, real *beta, complex *b, integer *ldb);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

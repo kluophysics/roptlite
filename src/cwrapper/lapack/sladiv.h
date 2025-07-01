@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int sladiv_(real *a, real *b, real *c__, real *d__, real *p, real *q);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

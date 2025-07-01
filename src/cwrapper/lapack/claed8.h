@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int claed8_(integer *k, integer *n, integer *qsiz, complex *q, integer *ldq, real *d__, real *rho, integer *cutpnt, real *z__, real *dlamda, complex *q2, integer *ldq2, real *w, integer *indxp, integer *indx, integer *indxq, integer *perm, integer *givptr, integer *givcol, real *givnum, integer *info);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

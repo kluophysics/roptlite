@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int clatdf_(integer *ijob, integer *n, complex *z__, integer *ldz, complex *rhs, real *rdsum, real *rdscal, integer *ipiv, integer *jpiv);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif

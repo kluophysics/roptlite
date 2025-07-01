@@ -1,4 +1,4 @@
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int slamrg_(integer *n1, integer *n2, real *a, integer *strd1, integer *strd2, integer *index);
 
-#ifdef __cplusplus
+#if __cplusplus >= 201103L
 }
 #endif
