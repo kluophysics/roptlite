@@ -67,10 +67,10 @@ configure_package_config_file(
   DESTINATION share/roptlite/cmake)
 
 # install header files
-install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/
-		DESTINATION ${ROPTLITE_INSTALL_INCLUDEDIR}
-		FILES_MATCHING PATTERN "*.h"
-		)
+# install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/
+# 		DESTINATION ${ROPTLITE_INSTALL_INCLUDEDIR}
+# 		FILES_MATCHING PATTERN "*.h"
+# 		)
         
 # if(ENABLE_COVERAGE)
 #   add_coverage(surchem)

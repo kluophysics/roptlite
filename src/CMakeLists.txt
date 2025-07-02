@@ -134,21 +134,21 @@ target_link_libraries(
     PUBLIC ${LAPACK_LIBRARIES})
 # CMake 3.18: PUBLIC LAPACK::LAPACK
 
-target_include_directories(roptlite
-    PUBLIC
-      ${CMAKE_CURRENT_SOURCE_DIR}
-      ${CMAKE_CURRENT_SOURCE_DIR}/Manifolds
-      ${CMAKE_CURRENT_SOURCE_DIR}/Others
-      ${CMAKE_CURRENT_SOURCE_DIR}/Others/SparseBLAS
-      ${CMAKE_CURRENT_SOURCE_DIR}/Others/fftw
-      ${CMAKE_CURRENT_SOURCE_DIR}/Others/wavelet
-      ${CMAKE_CURRENT_SOURCE_DIR}/Problems
-      ${CMAKE_CURRENT_SOURCE_DIR}/Solvers
-      ${CMAKE_CURRENT_SOURCE_DIR}/cwrapper
-      ${CMAKE_CURRENT_SOURCE_DIR}/cwrapper/blas
-      ${CMAKE_CURRENT_SOURCE_DIR}/cwrapper/lapack
-      # ${CMAKE_CURRENT_SOURCE_DIR}/test
-)
+# target_include_directories(roptlite
+#     PUBLIC
+#       ${CMAKE_CURRENT_SOURCE_DIR}
+#       ${CMAKE_CURRENT_SOURCE_DIR}/Manifolds
+#       ${CMAKE_CURRENT_SOURCE_DIR}/Others
+#       ${CMAKE_CURRENT_SOURCE_DIR}/Others/SparseBLAS
+#       ${CMAKE_CURRENT_SOURCE_DIR}/Others/fftw
+#       ${CMAKE_CURRENT_SOURCE_DIR}/Others/wavelet
+#       ${CMAKE_CURRENT_SOURCE_DIR}/Problems
+#       ${CMAKE_CURRENT_SOURCE_DIR}/Solvers
+#       ${CMAKE_CURRENT_SOURCE_DIR}/cwrapper
+#       ${CMAKE_CURRENT_SOURCE_DIR}/cwrapper/blas
+#       ${CMAKE_CURRENT_SOURCE_DIR}/cwrapper/lapack
+#       # ${CMAKE_CURRENT_SOURCE_DIR}/test
+# )
 
 
 # file(GLOB PUBLIC_HEADERS ./*.h)
