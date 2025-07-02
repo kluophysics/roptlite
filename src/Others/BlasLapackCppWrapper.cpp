@@ -11,7 +11,9 @@ More functions will be added in this class.
 /*Define the namespace */
 namespace roptlite {
 	//#include <dasum.h>
-	//#include <daxpy.h>
+	//#include <daxpy.h>.
+	using namespace cwrapper;
+	
 	void axpy_(integer *n, complex *ca, complex *cx, integer *incx, complex *cy, integer *incy)
 	{
 #ifndef MATLAB_MEX_FILE

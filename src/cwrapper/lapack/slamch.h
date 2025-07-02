@@ -1,8 +1,11 @@
+#include "f2c.h"
+
+namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
-#include "f2c.h" 
+
 
 E_f slamch_(char *cmach);
 int slamc1_(integer *beta, integer *t, logical *rnd, logical *ieee1);
@@ -14,3 +17,4 @@ int slamc5_(integer *beta, integer *p, integer *emin, logical *ieee, integer *em
 #ifdef __cplusplus
 }
 #endif
+} // end of namespace cwrapper
