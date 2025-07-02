@@ -134,5 +134,5 @@ target_link_libraries(
      ${BLAS_LIBRARIES}
      ${LAPACK_LIBRARIES})
 
-set_target_properties(roptlite PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE)
+# set_target_properties(roptlite PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE)
 
