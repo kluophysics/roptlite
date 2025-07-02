@@ -1,7 +1,7 @@
 
 #include "Problems/FRankETextureInpainting.h"
 
-#ifdef ROPTLIB_WITH_FFTW
+#ifdef ROPTLITE_WITH_FFTW
 
 /*Define the namespace*/
 namespace roptlite{

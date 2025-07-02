@@ -6,7 +6,7 @@
 
 #ifdef DRIVERJULIAPROB
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 //double *DriverJuliaProb(const char *fname, const char *gfname, const char *hfname, const char *isstopped, const char *LSinput, const char *solvername, double *paramsvalues, long int lengthSParams)
 double *DriverJuliaProb(const char *fname, const char *gfname, const char *hfname, const char *isstopped, const char *LSinput, /*Handles*/

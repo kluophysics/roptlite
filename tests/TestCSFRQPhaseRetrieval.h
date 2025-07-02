@@ -38,9 +38,9 @@ This is the test file to run the problem defined in LRBlindDeconvolution.h and L
 
 #include "test/DriverMexProb.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
-#ifdef ROPTLIB_WITH_FFTW
+#ifdef ROPTLITE_WITH_FFTW
 
 void testCSFRQPhaseRetrieval(void);
 void WFegf(realdp *x, realdp *b, realdp *masks, realdp *egf, integer n1, integer n2, integer l, integer r);

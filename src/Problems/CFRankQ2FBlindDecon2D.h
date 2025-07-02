@@ -27,7 +27,7 @@ Problem --> CFRankQ2FBlindDecon2D
 #undef abs
 #include "Others/wavelet/wavelet.h"
 
-#ifdef ROPTLIB_WITH_FFTW
+#ifdef ROPTLITE_WITH_FFTW
 
 /*Define the namespace*/
 namespace roptlite{

@@ -51,7 +51,7 @@ This is the test file for the Sparse PCA problem defined in StieSPCA.h and StieS
 /*The global head file*/
 #include "Others/def.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 /*The main test function*/
 void testStieSPCA(void);

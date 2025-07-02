@@ -2656,7 +2656,7 @@ multiplication in Matlab is used. */
         return (*this);
     };
 
-#ifdef ROPTLIB_WITH_FFTW
+#ifdef ROPTLITE_WITH_FFTW
     Element Element::GetFFT2D(int direction) const
     {
         assert(iscomplex && Space != nullptr);

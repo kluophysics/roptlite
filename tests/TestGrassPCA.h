@@ -54,7 +54,7 @@
 
 #include "Others/def.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testGrassPCA(void);
 

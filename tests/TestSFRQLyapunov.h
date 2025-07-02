@@ -34,7 +34,7 @@ This is the test file to run the problem defined in NSOLyapunov.h and NSOLyapuno
 
 #include "Others/def.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testSFRQLyapunov(void);
 

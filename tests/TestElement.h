@@ -9,7 +9,7 @@ This is the test file to check the matrix operations defined in Element.h and El
 
 #include "Manifolds/Element.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testElement(void);
 

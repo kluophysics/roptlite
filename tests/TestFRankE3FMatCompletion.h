@@ -34,7 +34,7 @@ This is the test file to run the problem defined in LRMatrixCompletion.h and LRM
 
 #include "Others/def.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testFRankE3FMatCompletion(void);
 realdp LRMatrixCompletionLinesearchInput(integer iter, const Variable &x1, const Vector &eta1, realdp initialstepsize, realdp initialslope, const Problem *prob, const Solvers *solver);

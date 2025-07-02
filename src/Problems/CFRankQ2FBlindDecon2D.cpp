@@ -1,7 +1,7 @@
 
 #include "Problems/CFRankQ2FBlindDecon2D.h"
 
-#ifdef ROPTLIB_WITH_FFTW
+#ifdef ROPTLITE_WITH_FFTW
 
 /*Define the namespace*/
 namespace roptlite {

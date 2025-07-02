@@ -3,7 +3,7 @@
 
 #ifdef MATLAB_MEX_FILE
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 std::map<integer *, integer> *CheckMemoryDeleted;
 

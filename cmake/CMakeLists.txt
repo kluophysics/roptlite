@@ -14,7 +14,7 @@ add_compile_options(-march=native) # Enable faster instruction sets
 # include(GNUInstallDirs)
 
 
-# set(ROPTLIB_INSTALL_INCLUDEDIR ${CMAKE_INSTALL_INCLUDEDIR}/roptlite)
+# set(ROPTLITE_INSTALL_INCLUDEDIR ${CMAKE_INSTALL_INCLUDEDIR}/roptlite)
 
 # roptlite requires lapack, blas, and m libraries
 find_library(LAPACK lapack DOC "LAPACK library to link against")

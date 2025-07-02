@@ -34,7 +34,7 @@ This is the test file to run the problem defined in LRMatrixCompletion.h and LRM
 
 #include "Others/def.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testFRankQ2FMatCompletion(void);
 

@@ -1,7 +1,7 @@
 
 #include "test/TestSphereSparsestVector.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testSphereSparsestVector(void)
 {

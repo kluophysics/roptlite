@@ -1,7 +1,7 @@
 
 #include "test/TestEucQuadratic.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testEucQuadratic(void)
 {

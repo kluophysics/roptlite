@@ -1,9 +1,9 @@
 
 #include "test/TestFRankETextureInpainting.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
-#ifdef ROPTLIB_WITH_FFTW
+#ifdef ROPTLITE_WITH_FFTW
 
 void testFRankETextureInpainting(void)
 {

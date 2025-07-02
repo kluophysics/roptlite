@@ -51,7 +51,7 @@ This is the test file for the Sparse Variable PCA problem defined in GrassSVPCA.
 /*The global head file*/
 #include "Others/def.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 /*The main test function*/
 void testGrassSVPCA(void);

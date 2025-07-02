@@ -11,7 +11,7 @@ This is the global head file. Every file in roptlite will include this file.
 //#define DRIVERJULIAPROB//For debug---
 
 #define DOUBLE_PRECISION  /*SINGLE_PRECISION DOUBLE_PRECISION*/
-//#define ROPTLIB_WITH_FFTW //When FFTW library is needed
+//#define ROPTLITE_WITH_FFTW //When FFTW library is needed
 
 #undef real
 #include <cmath>

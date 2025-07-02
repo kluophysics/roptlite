@@ -15,7 +15,7 @@ add_compile_options(-march=native) # Enable faster instruction sets
 # include(GNUInstallDirs)
 
 include(GNUInstallDirs)
-set(ROPTLIB_INSTALL_INCLUDEDIR ${CMAKE_INSTALL_INCLUDEDIR}/roptlite)
+set(ROPTLITE_INSTALL_INCLUDEDIR ${CMAKE_INSTALL_INCLUDEDIR}/roptlite)
 
 
 
@@ -68,7 +68,7 @@ configure_package_config_file(
 
 # install header files
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/
-		DESTINATION ${ROPTLIB_INSTALL_INCLUDEDIR}
+		DESTINATION ${ROPTLITE_INSTALL_INCLUDEDIR}
 		FILES_MATCHING PATTERN "*.h"
 		)
         

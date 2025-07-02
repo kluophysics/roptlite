@@ -383,7 +383,7 @@ namespace roptlite{
         /*Submatrix*/
         Element GetSubmatrix(integer rstart, integer rend, integer cstart, integer cend) const;
 
-#ifdef ROPTLIB_WITH_FFTW
+#ifdef ROPTLITE_WITH_FFTW
         /*2D FFT:
         direction = FFTW_FORWARD: F * this, where F is the DFT matrix (kronecker from)
         direction = FFTW_BACKWARD: \bar{F} * this, where \bar denotes the conjugate operator.*/

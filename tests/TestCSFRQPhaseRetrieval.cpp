@@ -1,8 +1,8 @@
 #include "test/TestCSFRQPhaseRetrieval.h"
 
-#ifdef ROPTLIB_WITH_FFTW
+#ifdef ROPTLITE_WITH_FFTW
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testCSFRQPhaseRetrieval(void)
 {

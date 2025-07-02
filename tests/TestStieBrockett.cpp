@@ -1,7 +1,7 @@
 
 #include "test/TestStieBrockett.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 /*User-specified linesearch algorithm*/
 realdp LinesearchInput(integer iter, const Variable &x1, const Vector &exeta1, realdp initialstepsize, realdp initialslope, const Problem *prob, const Solvers *solver)

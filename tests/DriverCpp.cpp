@@ -1,6 +1,6 @@
 #include "test/DriverCpp.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 int main(void)
 {
@@ -100,7 +100,7 @@ void testall(void)
 	unsigned seed = (unsigned)time(NULL);
 	seed = 1; /*The following test is only for random seed zero*/
 
-#ifdef ROPTLIB_WITH_FFTW
+#ifdef ROPTLITE_WITH_FFTW
     {
         genrandseed(seed);
         printf("\n testCSFRQPhaseRetrieval\n");
@@ -823,7 +823,7 @@ void testall(void)
         Variable ProdX = Domain.RandominManifold();
         
         // ------------------- read data -------------------
-        std::string fname = "/Users/whuang/Documents/Syn/Codes/newROPTLIB/ROPTLIB/Matlab/ForCpp/wn_mini.csv"; //Relative path does not work properly. Absolute path is used.
+        std::string fname = "/Users/whuang/Documents/Syn/Codes/newROPTLITE/ROPTLITE/Matlab/ForCpp/wn_mini.csv"; //Relative path does not work properly. Absolute path is used.
         std::ifstream csv_data(fname, std::ios::in);
         std::string line;
 

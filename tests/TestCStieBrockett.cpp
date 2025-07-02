@@ -1,7 +1,7 @@
 
 #include "test/TestCStieBrockett.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testCStieBrockett(void)
 {

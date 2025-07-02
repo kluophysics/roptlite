@@ -1,4 +1,4 @@
-# Makefile for ROPTLIB. Test on ubuntu 18.04 LTS
+# Makefile for ROPTLITE. Test on ubuntu 18.04 LTS
 
 # set compiler
 CC = g++
@@ -6,25 +6,25 @@ CC = g++
 # default test problem is to check all the problems
 TP?=DriverCpp
 
-#the path of ROPTLIB
+#the path of ROPTLITE
 ROOTPATH:=$(dir $(realpath $(firstword $(MAKEFILE_LIST))))
 
 # set the path of Julia
 JULIA_DIR:=/home/whuang/Documents/julia
 
-# directories of ROPTLIB header files
+# directories of ROPTLITE header files
 INCDIRS = -I$(ROOTPATH)/
 INCDIRS += -I$(ROOTPATH)/.vs/
-INCDIRS += -I$(ROOTPATH)/.vs/ROPTLIB/
-INCDIRS += -I$(ROOTPATH)/.vs/ROPTLIB/v15/
-INCDIRS += -I$(ROOTPATH)/.vs/ROPTLIB/v15/ipch/
-INCDIRS += -I$(ROOTPATH)/.vs/ROPTLIB/v15/ipch/AutoPCH/
-INCDIRS += -I$(ROOTPATH)/.vs/ROPTLIB/v15/ipch/AutoPCH/164433e706b84785/
-INCDIRS += -I$(ROOTPATH)/.vs/ROPTLIB/v15/ipch/AutoPCH/4fa875e8ac0192bd/
+INCDIRS += -I$(ROOTPATH)/.vs/ROPTLITE/
+INCDIRS += -I$(ROOTPATH)/.vs/ROPTLITE/v15/
+INCDIRS += -I$(ROOTPATH)/.vs/ROPTLITE/v15/ipch/
+INCDIRS += -I$(ROOTPATH)/.vs/ROPTLITE/v15/ipch/AutoPCH/
+INCDIRS += -I$(ROOTPATH)/.vs/ROPTLITE/v15/ipch/AutoPCH/164433e706b84785/
+INCDIRS += -I$(ROOTPATH)/.vs/ROPTLITE/v15/ipch/AutoPCH/4fa875e8ac0192bd/
 INCDIRS += -I$(ROOTPATH)/BinaryFiles/
 INCDIRS += -I$(ROOTPATH)/BinaryFiles/x64/
 INCDIRS += -I$(ROOTPATH)/BinaryFiles/x64/Debug/
-INCDIRS += -I$(ROOTPATH)/BinaryFiles/x64/Debug/ROPTLIB.tlog/
+INCDIRS += -I$(ROOTPATH)/BinaryFiles/x64/Debug/ROPTLITE.tlog/
 INCDIRS += -I$(ROOTPATH)/Manifolds/
 INCDIRS += -I$(ROOTPATH)/Matlab/
 INCDIRS += -I$(ROOTPATH)/Matlab/ForCpp/
@@ -52,25 +52,25 @@ INCDIRS += -I$(ROOTPATH)/Others/SparseBLAS/
 INCDIRS += -I$(ROOTPATH)/Others/fftw/
 INCDIRS += -I$(ROOTPATH)/Others/wavelet/
 INCDIRS += -I$(ROOTPATH)/Problems/
-INCDIRS += -I$(ROOTPATH)/ROPTLIB_mac.xcodeproj/
-INCDIRS += -I$(ROOTPATH)/ROPTLIB_mac.xcodeproj/project.xcworkspace/
-INCDIRS += -I$(ROOTPATH)/ROPTLIB_mac.xcodeproj/project.xcworkspace/xcshareddata/
-INCDIRS += -I$(ROOTPATH)/ROPTLIB_mac.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
-INCDIRS += -I$(ROOTPATH)/ROPTLIB_mac.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/configuration/
-INCDIRS += -I$(ROOTPATH)/ROPTLIB_mac.xcodeproj/project.xcworkspace/xcuserdata/
-INCDIRS += -I$(ROOTPATH)/ROPTLIB_mac.xcodeproj/project.xcworkspace/xcuserdata/whuang.xcuserdatad/
-INCDIRS += -I$(ROOTPATH)/ROPTLIB_mac.xcodeproj/xcshareddata/
-INCDIRS += -I$(ROOTPATH)/ROPTLIB_mac.xcodeproj/xcshareddata/xcschemes/
-INCDIRS += -I$(ROOTPATH)/ROPTLIB_mac.xcodeproj/xcuserdata/
-INCDIRS += -I$(ROOTPATH)/ROPTLIB_mac.xcodeproj/xcuserdata/whuang.xcuserdatad/
-INCDIRS += -I$(ROOTPATH)/ROPTLIB_mac.xcodeproj/xcuserdata/whuang.xcuserdatad/xcdebugger/
-INCDIRS += -I$(ROOTPATH)/ROPTLIB_mac.xcodeproj/xcuserdata/whuang.xcuserdatad/xcschemes/
+INCDIRS += -I$(ROOTPATH)/ROPTLITE_mac.xcodeproj/
+INCDIRS += -I$(ROOTPATH)/ROPTLITE_mac.xcodeproj/project.xcworkspace/
+INCDIRS += -I$(ROOTPATH)/ROPTLITE_mac.xcodeproj/project.xcworkspace/xcshareddata/
+INCDIRS += -I$(ROOTPATH)/ROPTLITE_mac.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+INCDIRS += -I$(ROOTPATH)/ROPTLITE_mac.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/configuration/
+INCDIRS += -I$(ROOTPATH)/ROPTLITE_mac.xcodeproj/project.xcworkspace/xcuserdata/
+INCDIRS += -I$(ROOTPATH)/ROPTLITE_mac.xcodeproj/project.xcworkspace/xcuserdata/whuang.xcuserdatad/
+INCDIRS += -I$(ROOTPATH)/ROPTLITE_mac.xcodeproj/xcshareddata/
+INCDIRS += -I$(ROOTPATH)/ROPTLITE_mac.xcodeproj/xcshareddata/xcschemes/
+INCDIRS += -I$(ROOTPATH)/ROPTLITE_mac.xcodeproj/xcuserdata/
+INCDIRS += -I$(ROOTPATH)/ROPTLITE_mac.xcodeproj/xcuserdata/whuang.xcuserdatad/
+INCDIRS += -I$(ROOTPATH)/ROPTLITE_mac.xcodeproj/xcuserdata/whuang.xcuserdatad/xcdebugger/
+INCDIRS += -I$(ROOTPATH)/ROPTLITE_mac.xcodeproj/xcuserdata/whuang.xcuserdatad/xcschemes/
 INCDIRS += -I$(ROOTPATH)/Solvers/
 INCDIRS += -I$(ROOTPATH)/cwrapper/
 INCDIRS += -I$(ROOTPATH)/cwrapper/blas/
 INCDIRS += -I$(ROOTPATH)/cwrapper/lapack/
 INCDIRS += -I$(ROOTPATH)/test/
-# ROPTLIB C++ files
+# ROPTLITE C++ files
 CPPS += $(ROOTPATH)/Manifolds/CFixedRankQ2F.cpp $(ROOTPATH)/Manifolds/CStiefel.cpp $(ROOTPATH)/Manifolds/CSymFixedRankQ.cpp $(ROOTPATH)/Manifolds/Element.cpp $(ROOTPATH)/Manifolds/Euclidean.cpp $(ROOTPATH)/Manifolds/FixedRankE.cpp $(ROOTPATH)/Manifolds/FixedRankE3F.cpp $(ROOTPATH)/Manifolds/FixedRankQ2F.cpp $(ROOTPATH)/Manifolds/Grassmann.cpp $(ROOTPATH)/Manifolds/Manifold.cpp $(ROOTPATH)/Manifolds/MultiManifolds.cpp $(ROOTPATH)/Manifolds/PoincareBall.cpp $(ROOTPATH)/Manifolds/SPDManifold.cpp $(ROOTPATH)/Manifolds/SmartSpace.cpp $(ROOTPATH)/Manifolds/Sphere.cpp $(ROOTPATH)/Manifolds/SphereTx.cpp $(ROOTPATH)/Manifolds/Stiefel.cpp $(ROOTPATH)/Manifolds/SymFixedRankQ.cpp 
 CPPS += $(ROOTPATH)/Others/BlasLapackCppWrapper.cpp $(ROOTPATH)/Others/ForDebug.cpp $(ROOTPATH)/Others/MinPNormConHull.cpp $(ROOTPATH)/Others/SparseMatrix.cpp $(ROOTPATH)/Others/Spline.cpp $(ROOTPATH)/Others/Timer.cpp $(ROOTPATH)/Others/randgen.cpp 
 CPPS += $(ROOTPATH)/Others/SparseBLAS/nist_spblas.cpp 
@@ -82,12 +82,12 @@ CPPS += $(ROOTPATH)/test/TestCFRankQ2FBlindDecon2D.cpp $(ROOTPATH)/test/TestCSFR
 UPPER_TP  = $(shell echo $(TP) | tr a-z A-Z)
 
 # make a binary file, which is called in command line
-ROPTLIB:
-	$(CC) -O3 -w -std=c++0x $(ROOTPATH)/test/$(TP).cpp $(CPPS) $(INCDIRS) -D$(UPPER_TP) -DROPTLIB_WITH_FFTW -llapack -lblas -lfftw3 -lm -o $(TP)
+ROPTLITE:
+	$(CC) -O3 -w -std=c++0x $(ROOTPATH)/test/$(TP).cpp $(CPPS) $(INCDIRS) -D$(UPPER_TP) -DROPTLITE_WITH_FFTW -llapack -lblas -lfftw3 -lm -o $(TP)
 
 #make a library:
 libropt.so:
-	$(CC) -w -std=c++0x -shared -fPIC -O3 $(CPPS) $(INCDIRS) -DROPTLIB_WITH_FFTW -llapack -lblas -lfftw3 -lm -o $@
+	$(CC) -w -std=c++0x -shared -fPIC -O3 $(CPPS) $(INCDIRS) -DROPTLITE_WITH_FFTW -llapack -lblas -lfftw3 -lm -o $@
 
 #make a julia library:
 JULIA_LIB:=$(JULIA_DIR)/lib
@@ -98,5 +98,5 @@ LDFLAGS:=-L$(JULIA_LIB)
 LDLIBS=-ljulia
 export LD_LIBRARY_PATH:=$(JULIA_LIB):$(JULIA_LIB)/julia
 
-JuliaROPTLIB:
-	$(CC) -O3 -shared -fPIC -std=c++0x $(ROOTPATH)/test/$(TP).cpp $(CPPS) $(INCDIRS) -D$(UPPER_TP) $(CPPFLAGS) $(LDFLAGS) -Wl,-rpath,$(JULIA_LIB) -lm $(LDLIBS) -DJULIA_LIB_DIR="$(JULIA_DIR)/lib/julia" -DROPTLIB_WITH_FFTW -llapack -lblas -lfftw3 -o $(TP).so
+JuliaROPTLITE:
+	$(CC) -O3 -shared -fPIC -std=c++0x $(ROOTPATH)/test/$(TP).cpp $(CPPS) $(INCDIRS) -D$(UPPER_TP) $(CPPFLAGS) $(LDFLAGS) -Wl,-rpath,$(JULIA_LIB) -lm $(LDLIBS) -DJULIA_LIB_DIR="$(JULIA_DIR)/lib/julia" -DROPTLITE_WITH_FFTW -llapack -lblas -lfftw3 -o $(TP).so
