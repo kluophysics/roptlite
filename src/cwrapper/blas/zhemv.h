@@ -1,3 +1,5 @@
+#pragma once
+
 #include "f2c.h" 
 
 namespace cwrapper {
