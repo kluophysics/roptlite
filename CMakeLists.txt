@@ -41,7 +41,7 @@ add_subdirectory(src)
 # ------------------------------------------------------------------------------
 install(
     TARGETS ${PROJECT_NAME}
-    EXPORT roptlibTargets
+    EXPORT roptliteTargets
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
@@ -50,20 +50,20 @@ install(
     PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/roptlite)
 
 export(
-    EXPORT roptlibTargets
-    FILE roptlibTargets.cmake
+    EXPORT roptliteTargets
+    FILE roptliteTargets.cmake
     NAMESPACE roptlite::)
 include(CMakePackageConfigHelpers)
 
 
 configure_package_config_file(
-    cmake/roptlibConfig.cmake "${CMAKE_CURRENT_BINARY_DIR}/roptlibConfig.cmake"
+    cmake/roptliteConfig.cmake "${CMAKE_CURRENT_BINARY_DIR}/roptliteConfig.cmake"
     INSTALL_DESTINATION "${LIB_INSTALL_DIR}/cmake/")
 
 
   install(
-  FILES ${CMAKE_CURRENT_BINARY_DIR}/roptlibConfig.cmake
-        ${CMAKE_CURRENT_BINARY_DIR}/roptlibTargets.cmake
+  FILES ${CMAKE_CURRENT_BINARY_DIR}/roptliteConfig.cmake
+        ${CMAKE_CURRENT_BINARY_DIR}/roptliteTargets.cmake
   DESTINATION share/roptlite/cmake)
 
 # install header files

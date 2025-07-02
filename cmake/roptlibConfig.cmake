@@ -2,7 +2,7 @@
 
 include(CMakeFindDependencyMacro)
 
-include("${CMAKE_CURRENT_LIST_DIR}/roptlibTargets.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/roptliteTargets.cmake")
 
 find_dependency(M REQUIRED)
 find_dependency(BLAS REQUIRED)
