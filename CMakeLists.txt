@@ -1,83 +1,88 @@
-cmake_minimum_required(VERSION 3.10)
-project(roptlite LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.15)
+project(roptlite VERSION 0.1 LANGUAGES CXX)
 
-
+# Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
-set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
+# Set module path for custom CMake scripts
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
 
-# add_compile_definitions(__cplusplus=201703L)
-# message(STATUS "C++ Standard: ${__cplusplus}")
-set (CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
-add_compile_options(-march=native) # Enable faster instruction sets
+# Compiler flags
+add_compile_options(-march=native)
 
-# include(GNUInstallDirs)
+# Find required libraries
+find_package(BLAS REQUIRED)
+find_package(LAPACK REQUIRED)
+find_library(MATH_LIB m)
 
+# Include directories
 include(GNUInstallDirs)
 set(ROPTLITE_INSTALL_INCLUDEDIR ${CMAKE_INSTALL_INCLUDEDIR}/roptlite)
 
-
-
-# # Directory for built libraries
-# set(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR}/lib CACHE PATH "The directory in which to place libraries built by this project")
-# # Directory for built executables
-# set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR}/bin CACHE PATH "The directory in which to place executables built by this project")
-
-
-# roptlite requires lapack, blas, and m libraries
-find_library(LAPACK lapack DOC "LAPACK library to link against")
-find_library(BLAS blas DOC "BLAS library to link against")
-find_library(M m "M library to link against")
-
-
+# Versioning
 include(version)
 
+# Add subdirectories
 add_subdirectory(src)
-# add_subdirectory(tests)
+# add_subdirectory(tests) # Uncomment if tests are available
 
 # ------------------------------------------------------------------------------
-# Export
+# Installation
 # ------------------------------------------------------------------------------
+include(CMakePackageConfigHelpers)
+
+set(INSTALL_CONFIGDIR ${CMAKE_INSTALL_LIBDIR}/cmake/roptlite)
+
+configure_package_config_file(
+    cmake/roptliteConfig.cmake
+    "${CMAKE_CURRENT_BINARY_DIR}/roptliteConfig.cmake"
+    INSTALL_DESTINATION "${INSTALL_CONFIGDIR}"
+)
+
+# # Export targets
+# export(
+#     TARGETS ${PROJECT_NAME}
+#     EXPORT roptliteTargets
+#     FILE "${CMAKE_CURRENT_BINARY_DIR}/roptliteTargets.cmake"
+#     NAMESPACE roptlite::
+# )
+
+# Install targets
 install(
     TARGETS ${PROJECT_NAME}
     EXPORT roptliteTargets
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-    INCLUDES
-    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
-    PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/roptlite)
+    INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+    PUBLIC_HEADER DESTINATION ${ROPTLITE_INSTALL_INCLUDEDIR}
+)
 
-export(
-    EXPORT roptliteTargets
-    FILE roptliteTargets.cmake
-    NAMESPACE roptlite::)
-include(CMakePackageConfigHelpers)
+# Install header files
+install(
+    DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/
+    DESTINATION ${ROPTLITE_INSTALL_INCLUDEDIR}
+    FILES_MATCHING PATTERN "*.h"
+)
 
+# Install CMake config files
+install(
+    FILES
+        "${CMAKE_CURRENT_BINARY_DIR}/roptliteConfig.cmake"
+        "${CMAKE_CURRENT_BINARY_DIR}/roptliteTargets.cmake"
+    DESTINATION ${INSTALL_CONFIGDIR}
+)
 
-# configure_package_config_file(
-#     cmake/roptliteConfig.cmake "${CMAKE_CURRENT_BINARY_DIR}/roptliteConfig.cmake"
-#     INSTALL_DESTINATION "${LIB_INSTALL_DIR}/cmake/")
-
-
-#   install(
-#   FILES ${CMAKE_CURRENT_BINARY_DIR}/roptliteConfig.cmake
-#         ${CMAKE_CURRENT_BINARY_DIR}/roptliteTargets.cmake
-#   DESTINATION share/roptlite/cmake)
-
-# install header files
-# install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/
-# 		DESTINATION ${ROPTLITE_INSTALL_INCLUDEDIR}
-# 		FILES_MATCHING PATTERN "*.h"
-# 		)
-        
-# if(ENABLE_COVERAGE)
-#   add_coverage(surchem)
+# Optional: Enable testing
+include(CTest)
+# if(BUILD_TESTING)
+#     add_subdirectory(tests)
 # endif()
 
-# IF (BUILD_TESTING)
-#   if(ENABLE_MPI)
-#     add_subdirectory(test)
-#   endif()
-# endif()
+# Print summary
+message(STATUS "roptlite version: ${PROJECT_VERSION}")
+message(STATUS "Install include dir: ${ROPTLITE_INSTALL_INCLUDEDIR}")
+message(STATUS "BLAS libraries: ${BLAS_LIBRARIES}")
+message(STATUS "LAPACK libraries: ${LAPACK_LIBRARIES}")
