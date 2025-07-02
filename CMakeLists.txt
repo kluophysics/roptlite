@@ -49,16 +49,16 @@ add_subdirectory(src)
 #     DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
 #     PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/roptlite)
 
-export(
-    EXPORT roptliteTargets
-    FILE roptliteTargets.cmake
-    NAMESPACE roptlite::)
-include(CMakePackageConfigHelpers)
+# export(
+#     EXPORT roptliteTargets
+#     FILE roptliteTargets.cmake
+#     NAMESPACE roptlite::)
+# include(CMakePackageConfigHelpers)
 
 
-configure_package_config_file(
-    cmake/roptliteConfig.cmake "${CMAKE_CURRENT_BINARY_DIR}/roptliteConfig.cmake"
-    INSTALL_DESTINATION "${LIB_INSTALL_DIR}/cmake/")
+# configure_package_config_file(
+#     cmake/roptliteConfig.cmake "${CMAKE_CURRENT_BINARY_DIR}/roptliteConfig.cmake"
+#     INSTALL_DESTINATION "${LIB_INSTALL_DIR}/cmake/")
 
 
 #   install(
