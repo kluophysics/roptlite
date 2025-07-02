@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int sgemm_(char *transa, char *transb, integer *m, integer *n, integer *k, real *alpha, real *a, integer *lda, real *b, integer *ldb, real *beta, real *c__, integer *ldc);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

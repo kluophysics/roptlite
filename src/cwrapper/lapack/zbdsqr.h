@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int zbdsqr_(char *uplo, integer *n, integer *ncvt, integer *nru, integer *ncc, doublereal *d__, doublereal *e, doublecomplex *vt, integer *ldvt, doublecomplex *u, integer *ldu, doublecomplex *c__, integer *ldc, doublereal *rwork, integer *info);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

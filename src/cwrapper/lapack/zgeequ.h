@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int zgeequ_(integer *m, integer *n, doublecomplex *a, integer *lda, doublereal *r__, doublereal *c__, doublereal *rowcnd, doublereal *colcnd, doublereal *amax, integer *info);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

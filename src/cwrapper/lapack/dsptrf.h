@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int dsptrf_(char *uplo, integer *n, doublereal *ap, integer *ipiv, integer *info);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -11,6 +11,6 @@ E_f slamc3_(real *a, real *b);
 int slamc4_(integer *emin, real *start, integer *base);
 int slamc5_(integer *beta, integer *p, integer *emin, logical *ieee, integer *emax, real *rmax);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

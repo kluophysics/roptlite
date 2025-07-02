@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 E_f clangb_(char *norm, integer *n, integer *kl, integer *ku, complex *ab, integer *ldab, real *work);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 E_f slansp_(char *norm, char *uplo, integer *n, real *ap, real *work);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

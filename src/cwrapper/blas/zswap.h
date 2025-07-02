@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int zswap_(integer *n, doublecomplex *zx, integer *incx, doublecomplex *zy, integer *incy);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

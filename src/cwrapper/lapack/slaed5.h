@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int slaed5_(integer *i__, real *d__, real *z__, real *delta, real *rho, real *dlam);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

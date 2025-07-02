@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int dlassq_(integer *n, doublereal *x, integer *incx, doublereal *scale, doublereal *sumsq);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

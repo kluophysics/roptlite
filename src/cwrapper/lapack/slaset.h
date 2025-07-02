@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int slaset_(char *uplo, integer *m, integer *n, real *alpha, real *beta, real *a, integer *lda);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

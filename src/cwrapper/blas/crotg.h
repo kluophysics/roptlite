@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int crotg_(complex *ca, complex *cb, real *c__, complex *s);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

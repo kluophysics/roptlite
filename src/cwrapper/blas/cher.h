@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int cher_(char *uplo, integer *n, real *alpha, complex *x, integer *incx, complex *a, integer *lda);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

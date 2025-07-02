@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int classq_(integer *n, complex *x, integer *incx, real *scale, real *sumsq);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

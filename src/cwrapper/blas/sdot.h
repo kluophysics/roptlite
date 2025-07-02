@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -8,6 +8,6 @@ real sdot_(integer *n, real *sx, integer *incx, real *sy, integer *incy);
 
 //E_f sdot_(integer *n, real *sx, integer *incx, real *sy, integer *incy);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 E_f clansy_(char *norm, char *uplo, integer *n, complex *a, integer *lda, real *work);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

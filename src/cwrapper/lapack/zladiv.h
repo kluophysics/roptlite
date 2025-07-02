@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 Z_f zladiv_(doublecomplex * ret_val, doublecomplex *x, doublecomplex *y);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

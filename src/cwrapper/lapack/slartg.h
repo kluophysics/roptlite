@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int slartg_(real *f, real *g, real *cs, real *sn, real *r__);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

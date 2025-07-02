@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 logical lsamen_(integer *n, char *ca, char *cb);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

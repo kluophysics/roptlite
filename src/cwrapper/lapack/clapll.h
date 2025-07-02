@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int clapll_(integer *n, complex *x, integer *incx, complex *y, integer *incy, real *ssmin);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

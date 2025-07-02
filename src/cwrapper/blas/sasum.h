@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 E_f sasum_(integer *n, real *sx, integer *incx);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

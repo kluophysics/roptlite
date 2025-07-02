@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int dscal_(integer *n, doublereal *da, doublereal *dx, integer *incx);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

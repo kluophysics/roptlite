@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -11,6 +11,6 @@ doublereal dlamc3_(doublereal *a, doublereal *b);
 int dlamc4_(integer *emin, doublereal *start, integer *base);
 int dlamc5_(integer *beta, integer *p, integer *emin, logical *ieee, integer *emax, doublereal *rmax);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

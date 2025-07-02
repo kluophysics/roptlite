@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 E_f slangt_(char *norm, integer *n, real *dl, real *d__, real *du);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

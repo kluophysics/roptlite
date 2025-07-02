@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int clarnv_(integer *idist, integer *iseed, integer *n, complex *x);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 int drotg_(doublereal *da, doublereal *db, doublereal *c__, doublereal *s);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

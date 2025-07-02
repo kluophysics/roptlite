@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -8,6 +8,6 @@ real snrm2_(integer *n, real *x, integer *incx);
 
 //E_f snrm2_(integer *n, real *x, integer *incx);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif

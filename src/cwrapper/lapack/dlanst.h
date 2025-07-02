@@ -1,4 +1,4 @@
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 extern "C" { 
 #endif  
 
@@ -6,6 +6,6 @@ extern "C" {
 
 doublereal dlanst_(char *norm, integer *n, doublereal *d__, doublereal *e);
 
-#if __cplusplus >= 201103L
+#ifdef __cplusplus
 }
 #endif
