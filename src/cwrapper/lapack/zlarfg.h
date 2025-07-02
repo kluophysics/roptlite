@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-int zlarfg_(integer *n, doublecomplex *alpha, doublecomplex *x, integer *incx, doublecomplex *tau);
+void roptlite_zlarfg_(integer *n, doublecomplex *alpha, doublecomplex *x, integer *incx, doublecomplex *tau);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-int cpptri_(char *uplo, integer *n, complex *ap, integer *info);
+void roptlite_cpptri_(char *uplo, integer *n, complex *ap, integer *info);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

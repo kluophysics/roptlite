@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-int dgetc2_(integer *n, doublereal *a, integer *lda, integer *ipiv, integer *jpiv, integer *info);
+void roptlite_dgetc2_(integer *n, doublereal *a, integer *lda, integer *ipiv, integer *jpiv, integer *info);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

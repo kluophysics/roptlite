@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-int zunghr_(integer *n, integer *ilo, integer *ihi, doublecomplex *a, integer *lda, doublecomplex *tau, doublecomplex *work, integer *lwork, integer *info);
+void roptlite_zunghr_(integer *n, integer *ilo, integer *ihi, doublecomplex *a, integer *lda, doublecomplex *tau, doublecomplex *work, integer *lwork, integer *info);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-E_f second_(void);
+E_f roptlite_second_(void);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

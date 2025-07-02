@@ -1,18 +1,11 @@
-#pragma once
-
-#include "f2c.h" 
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-
-E_f sasum_(integer *n, real *sx, integer *incx);
+E_f roptlite_sasum_(integer *n, real *sx, integer *incx);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

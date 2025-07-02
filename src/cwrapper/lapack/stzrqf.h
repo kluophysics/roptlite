@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-int stzrqf_(integer *m, integer *n, real *a, integer *lda, real *tau, integer *info);
+void roptlite_stzrqf_(integer *m, integer *n, real *a, integer *lda, real *tau, integer *info);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

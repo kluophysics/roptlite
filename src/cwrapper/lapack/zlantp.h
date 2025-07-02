@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-doublereal zlantp_(char *norm, char *uplo, char *diag, integer *n, doublecomplex *ap, doublereal *work);
+doublereal roptlite_zlantp_(char *norm, char *uplo, char *diag, integer *n, doublecomplex *ap, doublereal *work);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

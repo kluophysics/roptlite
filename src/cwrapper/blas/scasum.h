@@ -1,18 +1,11 @@
-#pragma once
-
-#include "f2c.h" 
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-
-E_f scasum_(integer *n, complex *cx, integer *incx);
+E_f roptlite_scasum_(integer *n, complex *cx, integer *incx);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

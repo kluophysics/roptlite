@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-int csyr_(char *uplo, integer *n, complex *alpha, complex *x, integer *incx, complex *a, integer *lda);
+void roptlite_csyr_(char *uplo, integer *n, complex *alpha, complex *x, integer *incx, complex *a, integer *lda);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-E_f slapy2_(real *x, real *y);
+E_f roptlite_slapy2_(real *x, real *y);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

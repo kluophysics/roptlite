@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-int slarrf_(integer *n, real *d__, real *l, real *ld, real *lld, integer *ifirst, integer *ilast, real *w, real *dplus, real *lplus, real *work, integer *iwork, integer *info);
+void roptlite_slarrf_(integer *n, real *d__, real *l, real *ld, real *lld, integer *ifirst, integer *ilast, real *w, real *dplus, real *lplus, real *work, integer *iwork, integer *info);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

@@ -1,18 +1,11 @@
-#pragma once
-
-#include "f2c.h" 
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-
-int dspmv_(char *uplo, integer *n, doublereal *alpha, doublereal *ap, doublereal *x, integer *incx, doublereal *beta, doublereal *y, integer *incy);
+void roptlite_dspmv_(char *uplo, integer *n, doublereal *alpha, doublereal *ap, doublereal *x, integer *incx, doublereal *beta, doublereal *y, integer *incy);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

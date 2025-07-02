@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-doublereal dlapy2_(doublereal *x, doublereal *y);
+doublereal roptlite_dlapy2_(doublereal *x, doublereal *y);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

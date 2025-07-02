@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-int dlaruv_(integer *iseed, integer *n, doublereal *x);
+void roptlite_dlaruv_(integer *iseed, integer *n, doublereal *x);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

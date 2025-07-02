@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-int spotri_(char *uplo, integer *n, real *a, integer *lda, integer *info);
+void roptlite_spotri_(char *uplo, integer *n, real *a, integer *lda, integer *info);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper

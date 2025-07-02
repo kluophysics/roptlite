@@ -1,17 +1,11 @@
-#pragma once
-
-#include "f2c.h"
-
-namespace cwrapper {
 #ifdef __cplusplus
 extern "C" { 
 #endif  
 
+#include "f2c.h" 
 
-
-int cpoequ_(integer *n, complex *a, integer *lda, real *s, real *scond, real *amax, integer *info);
+void roptlite_cpoequ_(integer *n, complex *a, integer *lda, real *s, real *scond, real *amax, integer *info);
 
 #ifdef __cplusplus
 }
 #endif
-} // end of namespace cwrapper
