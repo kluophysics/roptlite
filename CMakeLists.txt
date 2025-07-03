@@ -1,9 +1,16 @@
 cmake_minimum_required(VERSION 3.10)
+set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-project(roptlite)
+project(roptlite LANGUAGES CXX)
 
+# Build all binaries in a separate directory
+SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake)
+#add extra search paths for libraries and includes
+SET(INCLUDE_INSTALL_DIR "${CMAKE_INSTALL_PREFIX}/include" CACHE PATH "The directory the headers are installed in")
+SET(LIB_INSTALL_DIR "${CMAKE_INSTALL_PREFIX}/lib" CACHE STRING "Directory where lib will install")
+SET(DOC_INSTALL_DIR "${CMAKE_INSTALL_PREFIX}/share/doc/${PROJECT_NAME}" CACHE PATH "Path to the documentation")
+
 
 # add_compile_definitions(__cplusplus=201703L)
 # message(STATUS "C++ Standard: ${__cplusplus}")
@@ -12,10 +19,12 @@ add_compile_options(-march=native) # Enable faster instruction sets
 
 # include(GNUInstallDirs)
 
-include(GNUInstallDirs)
-set(ROPTLITE_INSTALL_INCLUDEDIR ${CMAKE_INSTALL_INCLUDEDIR}/roptlite)
+# include(GNUInstallDirs)
+# set(ROPTLITE_INSTALL_INCLUDEDIR ${CMAKE_INSTALL_INCLUDEDIR}/roptlite)
 
-
+################################################################################
+# Export package for use from the build tree
+EXPORT( PACKAGE ${PROJECT_NAME} )
 
 # # Directory for built libraries
 # set(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR}/lib CACHE PATH "The directory in which to place libraries built by this project")
