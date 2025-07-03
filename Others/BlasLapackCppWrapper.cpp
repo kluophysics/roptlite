@@ -291,7 +291,7 @@ namespace roptlite {
 	{
 		roptlite_strsm_(side, uplo, transa, diag, m, n, alpha, a, lda, b, ldb);
 	};
-	void trsm_(char *side, char *uplo, char *transa, char *diag, integer *m, integer *n, doublecomplex *alpha, doublecomplex *a, integer *lda, doublecomplex *b, integer *ldb, doublecomplex *beta, doublecomplex *c__, integer *ldc)
+	void trsm_(char *side, char *uplo, char *transa, char *diag, integer *m, integer *n, doublecomplex *alpha, doublecomplex *a, integer *lda, doublecomplex *b, integer *ldb)
 	{
 #ifndef MATLAB_MEX_FILE
 		roptlite_ztrsm_(side, uplo, transa, diag, m, n, alpha, a, lda, b, ldb);
