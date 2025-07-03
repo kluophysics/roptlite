@@ -24,7 +24,7 @@ add_compile_options(-march=native) # Enable faster instruction sets
 
 ################################################################################
 # Export package for use from the build tree
-EXPORT( PACKAGE ${PROJECT_NAME} )
+# EXPORT( PACKAGE ${PROJECT_NAME} )
 
 # # Directory for built libraries
 # set(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR}/lib CACHE PATH "The directory in which to place libraries built by this project")
@@ -44,27 +44,27 @@ add_subdirectory(src)
 # Export
 # ------------------------------------------------------------------------------
 
+install(
+    TARGETS ${PROJECT_NAME}
+    EXPORT roptliteTargets
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+    INCLUDES
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+    PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/roptlite)
 
-# export(
-#     EXPORT roptliteTargets
-#     FILE roptliteTargets.cmake
-#     NAMESPACE roptlite::)
-# include(CMakePackageConfigHelpers)
+export(
+    EXPORT roptliteTargets
+    FILE roptliteTargets.cmake
+    NAMESPACE roptlite::)
+include(CMakePackageConfigHelpers)
 
 
 # configure_package_config_file(
 #     cmake/roptliteConfig.cmake "${CMAKE_CURRENT_BINARY_DIR}/roptliteConfig.cmake"
 #     INSTALL_DESTINATION "${LIB_INSTALL_DIR}/cmake/")
 
-# install(
-#     TARGETS ${PROJECT_NAME}
-#     EXPORT roptliteTargets
-#     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
-#     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-#     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-#     INCLUDES
-#     DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
-#     PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/roptlite)
 
 #   install(
 #   FILES ${CMAKE_CURRENT_BINARY_DIR}/roptliteConfig.cmake
