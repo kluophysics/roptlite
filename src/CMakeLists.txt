@@ -1,3 +1,8 @@
+# roptlite requires lapack, blas, and m libraries
+find_library(LAPACK lapack DOC "LAPACK library to link against" REQUIRED)
+find_library(BLAS blas DOC "BLAS library to link against" REQUIRED)
+find_library(M m "M library to link against" REQUIRED)
+
 
 set(SRC_LIST
 
@@ -99,70 +104,28 @@ Solvers/SolversSMTR.cpp
 )
 
 
-add_library(${PROJECT_NAME}  ${SRC_LIST})
+add_library(roptlite  ${SRC_LIST})
+# set_target_properties(roptlite PROPERTIES OUTPUT_NAME "roptlite")
 
-target_include_directories(${PROJECT_NAME}
-    PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
-    PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Manifolds>
-    PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Others>
-    PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Others/SparseBLAS>
-    PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Others/fftw>
-    PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Others/wavelet>
-    PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Problems>
-    PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Solvers>
-    PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/cwrapper>
-    PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/cwrapper/blas>
-    PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/cwrapper/lapack>
+target_include_directories(roptlite
+    PUBLIC 
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Manifolds>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Others>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Others/SparseBLAS>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Others/fftw>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Others/wavelet>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Problems>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Solvers>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/cwrapper>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/cwrapper/blas>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/cwrapper/lapack>
 
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Manifolds>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Others>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Others/SparseBLAS>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Others/fftw>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Others/wavelet>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Problems>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Solvers>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/cwrapper>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/cwrapper/blas>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/cwrapper/lapack>
     )
 
 target_link_libraries(
-    ${PROJECT_NAME}
+    roptlite
     PUBLIC ${M_LIBRARIES}
     PUBLIC ${BLAS_LIBRARIES}
-    PUBLIC ${LAPACK_LIBRARIES})
-# CMake 3.18: PUBLIC LAPACK::LAPACK
-
-# target_include_directories(roptlite
-#     PUBLIC
-#       ${CMAKE_CURRENT_SOURCE_DIR}
-#       ${CMAKE_CURRENT_SOURCE_DIR}/Manifolds
-#       ${CMAKE_CURRENT_SOURCE_DIR}/Others
-#       ${CMAKE_CURRENT_SOURCE_DIR}/Others/SparseBLAS
-#       ${CMAKE_CURRENT_SOURCE_DIR}/Others/fftw
-#       ${CMAKE_CURRENT_SOURCE_DIR}/Others/wavelet
-#       ${CMAKE_CURRENT_SOURCE_DIR}/Problems
-#       ${CMAKE_CURRENT_SOURCE_DIR}/Solvers
-#       ${CMAKE_CURRENT_SOURCE_DIR}/cwrapper
-#       ${CMAKE_CURRENT_SOURCE_DIR}/cwrapper/blas
-#       ${CMAKE_CURRENT_SOURCE_DIR}/cwrapper/lapack
-#       # ${CMAKE_CURRENT_SOURCE_DIR}/test
-# )
-
-
-# file(GLOB PUBLIC_HEADERS ./*.h)
-# set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER "${PUBLIC_HEADERS}")
-
-
-
-
-# if(ENABLE_COVERAGE)
-#   add_coverage(surchem)
-# endif()
-
-# IF (BUILD_TESTING)
-#   if(ENABLE_MPI)
-#     add_subdirectory(test)
-#   endif()
-# endif()
+    PUBLIC ${LAPACK_LIBRARIES}
+    )
