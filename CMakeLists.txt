@@ -1,9 +1,14 @@
 # PROJECT CONFIGURATION
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.10)
 
-project(ROPTLITE C CXX)
+project(roptlite  LANGUAGES CXX)
+
 set (CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
 add_compile_options(-march=native) # Enable faster instruction sets
+
+# Build all binaries in a separate directory
+SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
 
 include(GNUInstallDirs)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
@@ -135,6 +140,8 @@ Solvers/SolversSMTR.cpp
 
 # COMPILE THE ROPTLITE LIBRARY
 add_library(roptlite SHARED ${SRC_LIST})
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 target_include_directories(roptlite PUBLIC 
    PUBLIC 
