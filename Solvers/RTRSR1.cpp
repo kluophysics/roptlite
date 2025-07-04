@@ -2,7 +2,7 @@
 #include "Solvers/RTRSR1.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	RTRSR1::RTRSR1(const Problem *prob, const Variable *initialx, LinearOPE *initialB)
 	{
@@ -122,4 +122,4 @@ namespace roptlite{
         
         printf("\n");
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

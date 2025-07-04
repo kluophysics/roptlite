@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_zsteqr_(char *compz, integer *n, doublereal *d__, doublereal *e, doublecomplex *z__, integer *ldz, doublereal *work, integer *info);
+int zsteqr_(char *compz, integer *n, doublereal *d__, doublereal *e, doublecomplex *z__, integer *ldz, doublereal *work, integer *info);
 
 #ifdef __cplusplus
 }

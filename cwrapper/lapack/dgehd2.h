@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_dgehd2_(integer *n, integer *ilo, integer *ihi, doublereal *a, integer *lda, doublereal *tau, doublereal *work, integer *info);
+int dgehd2_(integer *n, integer *ilo, integer *ihi, doublereal *a, integer *lda, doublereal *tau, doublereal *work, integer *info);
 
 #ifdef __cplusplus
 }

@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_slagv2_(real *a, integer *lda, real *b, integer *ldb, real *alphar, real *alphai, real *beta, real *csl, real *snl, real *csr, real *snr);
+int slagv2_(real *a, integer *lda, real *b, integer *ldb, real *alphar, real *alphai, real *beta, real *csl, real *snl, real *csr, real *snr);
 
 #ifdef __cplusplus
 }

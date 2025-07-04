@@ -2,7 +2,7 @@
 #include "Manifolds/FixedRankE3F.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	FixedRankE3F::FixedRankE3F(integer inm, integer inn, integer inr) : MultiManifolds(3,
 		new Grassmann(inm, inr), static_cast<integer> (1), new Euclidean(inr, inr), static_cast<integer> (1), new Grassmann(inn, inr), static_cast<integer> (1))
@@ -355,4 +355,4 @@ namespace roptlite{
 		result->AddToFields("DenseMatrix", M);
         return *result;
 	}
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

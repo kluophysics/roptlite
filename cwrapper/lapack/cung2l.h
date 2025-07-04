@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_cung2l_(integer *m, integer *n, integer *k, complex *a, integer *lda, complex *tau, complex *work, integer *info);
+int cung2l_(integer *m, integer *n, integer *k, complex *a, integer *lda, complex *tau, complex *work, integer *info);
 
 #ifdef __cplusplus
 }

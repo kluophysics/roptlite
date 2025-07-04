@@ -2,7 +2,7 @@
 #include "Solvers/RBFGS.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	RBFGS::RBFGS(const Problem *prob, const Variable *initialx, LinearOPE *initialH)
 	{
@@ -162,4 +162,4 @@ namespace roptlite{
         }
     };
 
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

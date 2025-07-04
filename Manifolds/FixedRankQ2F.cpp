@@ -2,7 +2,7 @@
 #include "Manifolds/FixedRankQ2F.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	FixedRankQ2F::FixedRankQ2F(integer inm, integer inn, integer inr) : ProductManifold(2,
 		new Euclidean(inm, inr), static_cast<integer> (1), new Euclidean(inn, inr), static_cast<integer> (1))
@@ -1000,4 +1000,4 @@ namespace roptlite{
         return *result;
     };
 
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

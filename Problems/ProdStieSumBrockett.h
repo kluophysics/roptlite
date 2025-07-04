@@ -18,7 +18,7 @@ Problem --> ProdStieSumBrockett
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class ProdStieSumBrockett : public Problem{
 	public:
@@ -40,6 +40,6 @@ namespace roptlite{
 		integer m;
 		integer q;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 
 #endif /* end of PRODSTIESUMBROCKETT_H */

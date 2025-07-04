@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_ssyr_(char *uplo, integer *n, real *alpha, real *x, integer *incx, real *a, integer *lda);
+int ssyr_(char *uplo, integer *n, real *alpha, real *x, integer *incx, real *a, integer *lda);
 
 #ifdef __cplusplus
 }

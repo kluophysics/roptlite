@@ -2,7 +2,7 @@
 #include "Problems/GrassPCA.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
     
     GrassPCA::GrassPCA(Vector inA, integer inN, integer inn, integer inp)
     {
@@ -89,4 +89,4 @@ namespace roptlite{
         result->ScalarTimesThis(-2./N);
         return *result;
     };
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

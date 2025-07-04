@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-E_f roptlite_clange_(char *norm, integer *m, integer *n, complex *a, integer *lda, real *work);
+E_f clange_(char *norm, integer *m, integer *n, complex *a, integer *lda, real *work);
 
 #ifdef __cplusplus
 }

@@ -2,7 +2,7 @@
 #include "Manifolds/Stiefel.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	Stiefel::Stiefel(integer inn, integer inp)
 	{
@@ -1051,4 +1051,4 @@ namespace roptlite{
 			}
 		}
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

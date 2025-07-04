@@ -16,7 +16,7 @@ Problem
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	/*Declaration of Manifold*/
 	class Manifold;
@@ -151,6 +151,6 @@ namespace roptlite{
         mutable integer N; /* for stochastic gradient type methods, the number of data, i.e., the N in \min_x \sum_{i = 1}^N f_i(x) */
 	};
 
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 
 #endif /* end of PROBLEM_H */

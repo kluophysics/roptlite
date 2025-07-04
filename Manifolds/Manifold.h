@@ -23,7 +23,7 @@ Manifold
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	/*declaration of Problem and ProductManifold. Manifold class should know
 	the classes Problem and ProductManifold have been defined somewhere.*/
@@ -442,5 +442,5 @@ namespace roptlite{
                 
         Vector &myCG(const Variable &x, const Vector &nb, integer dimNorVec, realdp mu, realdp tau, realdp lambdanFz, integer maxiter, const Vector &Weight, const Vector &BLambda, const Vector &init, const Problem *prob, integer *CGiter, Vector *result) const;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of MANIFOLD_H */

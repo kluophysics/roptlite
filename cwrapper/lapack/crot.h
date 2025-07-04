@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_crot_(integer *n, complex *cx, integer *incx, complex *cy, integer *incy, real *c__, complex *s);
+int crot_(integer *n, complex *cx, integer *incx, complex *cy, integer *incy, real *c__, complex *s);
 
 #ifdef __cplusplus
 }

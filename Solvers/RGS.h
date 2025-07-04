@@ -17,7 +17,7 @@ Solvers --> SolversNSM --> SolversNSMSub --> SolversNSMSubLS --> RGS
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	/*Compute min_{y in convex hull of gfs and prefgs are tangent vectors at the tangent space at x} ||y||
 	It is defined in SphereConvexHull.h and SphereConvexHull.cpp */
@@ -45,5 +45,5 @@ namespace roptlite{
 		/*Compute the search direction */
 		virtual void GetSearchDir(void);
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of RGS_H */

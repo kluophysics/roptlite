@@ -2,7 +2,7 @@
 #include "Solvers/SVRLRBroydenFamily.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
     
     SVRLRBroydenFamily::SVRLRBroydenFamily(const Problem *prob, const Variable *initialx)
     {
@@ -568,4 +568,4 @@ namespace roptlite{
         }
     };
     
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

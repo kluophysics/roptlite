@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_ssygs2_(integer *itype, char *uplo, integer *n, real *a, integer *lda, real *b, integer *ldb, integer *info);
+int ssygs2_(integer *itype, char *uplo, integer *n, real *a, integer *lda, real *b, integer *ldb, integer *info);
 
 #ifdef __cplusplus
 }

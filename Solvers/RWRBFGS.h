@@ -14,7 +14,7 @@ Solvers --> SolversSM --> SolversSMLS --> RWRBFGS
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class RWRBFGS : public SolversSMLS{
 	public:
@@ -94,6 +94,6 @@ namespace roptlite{
         Vector s, y;/*the s, y of current step*/
         LinearOPE H; /*The inverse Hessian approximations*/
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 
 #endif /* end of RWRBFGS_H */

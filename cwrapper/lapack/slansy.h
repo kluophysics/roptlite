@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-E_f roptlite_slansy_(char *norm, char *uplo, integer *n, real *a, integer *lda, real *work);
+E_f slansy_(char *norm, char *uplo, integer *n, real *a, integer *lda, real *work);
 
 #ifdef __cplusplus
 }

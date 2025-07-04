@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_dgetf2_(integer *m, integer *n, doublereal *a, integer *lda, integer *ipiv, integer *info);
+int dgetf2_(integer *m, integer *n, doublereal *a, integer *lda, integer *ipiv, integer *info);
 
 #ifdef __cplusplus
 }

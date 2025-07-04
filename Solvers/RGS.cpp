@@ -2,7 +2,7 @@
 #include "Solvers/RGS.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	RGS::RGS(const Problem *prob, const Variable *initialx)
 	{
@@ -65,4 +65,4 @@ namespace roptlite{
 		/*eta1 is viewed as the search direction*/
 		Mani->ScalarTimesVector(x1, static_cast<realdp> (-1) / ndir1, minPv, &eta1);
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

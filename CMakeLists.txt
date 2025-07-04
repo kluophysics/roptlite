@@ -1,7 +1,7 @@
 # PROJECT CONFIGURATION
 cmake_minimum_required(VERSION 3.10)
 
-project(roptlite  LANGUAGES CXX)
+project(ROPTLIB  LANGUAGES CXX)
 
 set (CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
 add_compile_options(-march=native) # Enable faster instruction sets
@@ -12,7 +12,7 @@ SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 include(GNUInstallDirs)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
-set(ROPTLITE_INSTALL_INCLUDEDIR ${CMAKE_INSTALL_INCLUDEDIR}/ROPTLITE)
+set(ROPTLIB_INSTALL_INCLUDEDIR ${CMAKE_INSTALL_INCLUDEDIR}/ROPTLIB)
 
 # # Directory for built libraries
 # set(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR}/lib CACHE PATH "The directory in which to place libraries built by this project")
@@ -29,11 +29,11 @@ option(CMAKE_VERBOSE_MAKEFILE "Generate verbose makefiles?" OFF)
 
 set(CODE_PROFILING OFF CACHE BOOL "Turn on code profiling?")
 if(${CODE_PROFILING})
-message(STATUS "Turning on code profiling for ROPTLITE")
+message(STATUS "Turning on code profiling for ROPTLIB")
 endif()
 
 
-# ROPTLITE requires lapack, blas, and m libraries
+# ROPTLIB requires lapack, blas, and m libraries
 find_library(LAPACK lapack DOC "LAPACK library to link against")
 find_library(BLAS blas DOC "BLAS library to link against")
 find_library(M m "M library to link against")
@@ -138,12 +138,12 @@ Solvers/SolversSMTR.cpp
 )
 
 
-# COMPILE THE ROPTLITE LIBRARY
-add_library(roptlite SHARED ${SRC_LIST})
+# COMPILE THE ROPTLIB LIBRARY
+add_library(ROPTLIB SHARED ${SRC_LIST})
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
-target_include_directories(roptlite PUBLIC 
+target_include_directories(ROPTLIB PUBLIC 
    PUBLIC 
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/Manifolds>
@@ -157,90 +157,90 @@ target_include_directories(roptlite PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/cwrapper/blas>
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/cwrapper/lapack>
 
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Manifolds>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Others>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Others/SparseBLAS>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Others/fftw>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Others/wavelet>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Problems>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/Solvers>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/cwrapper>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/cwrapper/blas>
-    $<INSTALL_INTERFACE:${ROPTLITE_INSTALL_INCLUDEDIR}/cwrapper/lapack>
+    $<INSTALL_INTERFACE:${ROPTLIB_INSTALL_INCLUDEDIR}>
+    $<INSTALL_INTERFACE:${ROPTLIB_INSTALL_INCLUDEDIR}/Manifolds>
+    $<INSTALL_INTERFACE:${ROPTLIB_INSTALL_INCLUDEDIR}/Others>
+    $<INSTALL_INTERFACE:${ROPTLIB_INSTALL_INCLUDEDIR}/Others/SparseBLAS>
+    $<INSTALL_INTERFACE:${ROPTLIB_INSTALL_INCLUDEDIR}/Others/fftw>
+    $<INSTALL_INTERFACE:${ROPTLIB_INSTALL_INCLUDEDIR}/Others/wavelet>
+    $<INSTALL_INTERFACE:${ROPTLIB_INSTALL_INCLUDEDIR}/Problems>
+    $<INSTALL_INTERFACE:${ROPTLIB_INSTALL_INCLUDEDIR}/Solvers>
+    $<INSTALL_INTERFACE:${ROPTLIB_INSTALL_INCLUDEDIR}/cwrapper>
+    $<INSTALL_INTERFACE:${ROPTLIB_INSTALL_INCLUDEDIR}/cwrapper/blas>
+    $<INSTALL_INTERFACE:${ROPTLIB_INSTALL_INCLUDEDIR}/cwrapper/lapack>
    
 )
 
-target_link_libraries(roptlite ${LAPACK} ${BLAS} ${M})
-set_target_properties(roptlite PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE)
+target_link_libraries(ROPTLIB ${LAPACK} ${BLAS} ${M})
+set_target_properties(ROPTLIB PROPERTIES INSTALL_RPATH_USE_LINK_PATH TRUE)
 
 if(${CODE_PROFILING})
-	set_target_properties(roptlite PROPERTIES COMPILE_FLAGS "-pg -g" LINK_FLAGS "-pg -g")
+	set_target_properties(ROPTLIB PROPERTIES COMPILE_FLAGS "-pg -g" LINK_FLAGS "-pg -g")
 endif()
 
 # COMPILE EXECUTABLES
 
-# Compile the simple test program from ROPTLITE
+# Compile the simple test program from ROPTLIB
 # add_executable(TestSimpleExample test/TestSimpleExample.cpp)
-# target_link_libraries(TestSimpleExample roptlite)
+# target_link_libraries(TestSimpleExample ROPTLIB)
 
-# Compile the simple product test program from ROPTLITE
+# Compile the simple product test program from ROPTLIB
 # add_executable(TestProduct test/TestProduct.h test/TestProduct.cpp)
-# target_link_libraries(TestProduct roptlite)
+# target_link_libraries(TestProduct ROPTLIB)
 
-# Compile the simple product test program from ROPTLITE
+# Compile the simple product test program from ROPTLIB
 # add_executable(TestProductBrockett test/TestProductExample.cpp test/TestProductExample.cpp)
-# target_link_libraries(TestProductBrockett roptlite)
+# target_link_libraries(TestProductBrockett ROPTLIB)
 
 ################################ INSTALL ##########################################
-include(CMakePackageConfigHelpers)
-set(INSTALL_CONFIGDIR ${CMAKE_INSTALL_LIBDIR}/cmake/roptlite)
+# include(CMakePackageConfigHelpers)
+# set(INSTALL_CONFIGDIR ${CMAKE_INSTALL_LIBDIR}/cmake/ROPTLIB)
 
-write_basic_package_version_file(${CMAKE_CURRENT_BINARY_DIR}/roptliteConfigVersion.cmake
-  VERSION 0.7
-  COMPATIBILITY AnyNewerVersion
-)
+# write_basic_package_version_file(${CMAKE_CURRENT_BINARY_DIR}/ROPTLIBConfigVersion.cmake
+#   VERSION 0.7
+#   COMPATIBILITY AnyNewerVersion
+# )
 
-configure_package_config_file(${CMAKE_CURRENT_LIST_DIR}/cmake/roptliteConfig.cmake.in
-  ${CMAKE_CURRENT_BINARY_DIR}/roptliteConfig.cmake
-  INSTALL_DESTINATION ${INSTALL_CONFIGDIR}
-)
+# configure_package_config_file(${CMAKE_CURRENT_LIST_DIR}/cmake/ROPTLIBConfig.cmake.in
+#   ${CMAKE_CURRENT_BINARY_DIR}/ROPTLIBConfig.cmake
+#   INSTALL_DESTINATION ${INSTALL_CONFIGDIR}
+# )
 
 # install the configuration file
-install(FILES
-  ${CMAKE_CURRENT_BINARY_DIR}/roptliteConfig.cmake
-  DESTINATION ${INSTALL_CONFIGDIR}
-)
+# install(FILES
+#   ${CMAKE_CURRENT_BINARY_DIR}/ROPTLIBConfig.cmake
+#   DESTINATION ${INSTALL_CONFIGDIR}
+# )
 
 
-install(
-		TARGETS roptlite
-		EXPORT roptliteTargets
-		LIBRARY  DESTINATION ${CMAKE_INSTALL_LIBDIR}
-)
+# install(
+# 		TARGETS ROPTLIB
+# 		EXPORT ROPTLIBTargets
+# 		LIBRARY  DESTINATION ${CMAKE_INSTALL_LIBDIR}
+# )
 
-install(
-		EXPORT roptliteTargets
-		FILE roptliteTargets.cmake
-		DESTINATION ${INSTALL_CONFIGDIR}
-)
+# install(
+# 		EXPORT ROPTLIBTargets
+# 		FILE ROPTLIBTargets.cmake
+# 		DESTINATION ${INSTALL_CONFIGDIR}
+# )
 
-# install header files
-install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/
-		DESTINATION ${ROPTLITE_INSTALL_INCLUDEDIR}
-		FILES_MATCHING PATTERN "*.h"
-		)
+# # install header files
+# install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/
+# 		DESTINATION ${ROPTLIB_INSTALL_INCLUDEDIR}
+# 		FILES_MATCHING PATTERN "*.h"
+# 		)
 
 
-export(TARGETS roptlite FILE roptliteTargets.cmake)
+# export(TARGETS ROPTLIB FILE ROPTLIBTargets.cmake)
 
-############################### UNINSTALL ##########################################
-if(NOT TARGET uninstall)
-	configure_file(
-			"${CMAKE_CURRENT_SOURCE_DIR}/cmake/cmake_uninstall.cmake.in"
-			"${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake"
-			IMMEDIATE @ONLY)
+# ############################### UNINSTALL ##########################################
+# if(NOT TARGET uninstall)
+# 	configure_file(
+# 			"${CMAKE_CURRENT_SOURCE_DIR}/cmake/cmake_uninstall.cmake.in"
+# 			"${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake"
+# 			IMMEDIATE @ONLY)
 
-	add_custom_target(uninstall
-			COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake)
-endif()
+# 	add_custom_target(uninstall
+# 			COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake)
+# endif()

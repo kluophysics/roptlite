@@ -2,7 +2,7 @@
 #include "Manifolds/CFixedRankQ2F.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 /* the numbers of rows are double because complex numbers need double memory compared to real numbers*/
 	CFixedRankQ2F::CFixedRankQ2F(integer inm, integer inn, integer inr) : ProductManifold(2,
@@ -1044,4 +1044,4 @@ namespace roptlite{
         ExtrProjection(x, *result, result);
         return *result;
     };
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_csytf2_(char *uplo, integer *n, complex *a, integer *lda, integer *ipiv, integer *info);
+int csytf2_(char *uplo, integer *n, complex *a, integer *lda, integer *ipiv, integer *info);
 
 #ifdef __cplusplus
 }

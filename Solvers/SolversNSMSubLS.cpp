@@ -2,7 +2,7 @@
 #include "Solvers/SolversNSMSubLS.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 	void SolversNSMSubLS::Run(void)
 	{
         Variable xTemp(x1);
@@ -475,5 +475,5 @@ namespace roptlite{
             }
 		}
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 

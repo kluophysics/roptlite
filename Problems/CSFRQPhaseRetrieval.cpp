@@ -1,10 +1,10 @@
 
 #include "Problems/CSFRQPhaseRetrieval.h"
 
-#ifdef ROPTLITE_WITH_FFTW
+#ifdef ROPTLIB_WITH_FFTW
 
 /*Define the namespace*/
-namespace roptlite {
+namespace ROPTLIB {
 	CSFRQPhaseRetrieval::CSFRQPhaseRetrieval(Vector inb, Vector inmasks, realdp inkappa, integer inn1, integer inn2, integer inl, integer inr)
 	{
 		b = inb;
@@ -197,5 +197,5 @@ namespace roptlite {
         return *result;
     };
 
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif

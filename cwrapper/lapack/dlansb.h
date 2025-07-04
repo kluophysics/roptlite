@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-doublereal roptlite_dlansb_(char *norm, char *uplo, integer *n, integer *k, doublereal *ab, integer *ldab, doublereal *work);
+doublereal dlansb_(char *norm, char *uplo, integer *n, integer *k, doublereal *ab, integer *ldab, doublereal *work);
 
 #ifdef __cplusplus
 }

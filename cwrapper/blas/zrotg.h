@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_zrotg_(doublecomplex *ca, doublecomplex *cb, doublereal *c__, doublecomplex *s);
+int zrotg_(doublecomplex *ca, doublecomplex *cb, doublereal *c__, doublecomplex *s);
 
 #ifdef __cplusplus
 }

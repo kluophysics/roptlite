@@ -13,7 +13,7 @@ TODO: Define the class to be a spline curve, not just a class contains many stat
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class Spline{
 	public:
@@ -35,5 +35,5 @@ namespace roptlite{
 		static realdp ValSecondDeriUniform(const realdp *dericoefs, int N, realdp h, realdp t);
 		static realdp ValSecondDeri(const realdp *dericoefs, const realdp *breaks, int N, realdp t);
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* SPLINE_H */

@@ -2,7 +2,7 @@
 #include "Manifolds/Grassmann.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	Grassmann::Grassmann(integer inn, integer inp)
 	{
@@ -422,4 +422,4 @@ namespace roptlite{
         return *result;
     };
 
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

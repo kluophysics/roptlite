@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_ctpmv_(char *uplo, char *trans, char *diag, integer *n, complex *ap, complex *x, integer *incx);
+int ctpmv_(char *uplo, char *trans, char *diag, integer *n, complex *ap, complex *x, integer *incx);
 
 #ifdef __cplusplus
 }

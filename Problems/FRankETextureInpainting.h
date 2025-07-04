@@ -17,10 +17,10 @@ Problem --> FRankETextureInpainting.h
 #include "Others/def.h"
 #include "Manifolds/FixedRankE.h"
 
-#ifdef ROPTLITE_WITH_FFTW
+#ifdef ROPTLIB_WITH_FFTW
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class FRankETextureInpainting : public Problem{
 	public:
@@ -54,7 +54,7 @@ namespace roptlite{
         integer lengthW;
         realdp L;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 
 #endif //FRANKETEXTUREINPAINTING_H
 #endif

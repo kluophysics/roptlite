@@ -20,7 +20,7 @@ Solvers --> SolversSM --> SolversSMSto --> RADAM
 #include <algorithm>
 
 /*Define the namespace*/
-namespace roptlite {
+namespace ROPTLIB {
 //	enum RADAMLR_SCHEDULER { FIXED1, DECAY1, STEPSIZELENGTH_RADAMLR };
 	class RADAM : public SolversSMSto {
 	public:
@@ -124,6 +124,6 @@ namespace roptlite {
 //        integer nsf;            /*the number of batch function evaluations*/
 //        integer nsg;            /*the number of batch gradient evaluations*/
 	};
-};/*end of roptlite namespace*/
+};/*end of ROPTLIB namespace*/
 
 #endif /* end of RADAM_H */

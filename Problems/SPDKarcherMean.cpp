@@ -2,7 +2,7 @@
 #include "Problems/SPDKarcherMean.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	SPDKarcherMean::SPDKarcherMean(Vector inLs, integer inn, integer innum)
 	{
@@ -139,4 +139,4 @@ namespace roptlite{
         *result = (*result / num - EGrad * etax) / x;
         return *result;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

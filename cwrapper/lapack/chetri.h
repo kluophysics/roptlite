@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_chetri_(char *uplo, integer *n, complex *a, integer *lda, integer *ipiv, complex *work, integer *info);
+int chetri_(char *uplo, integer *n, complex *a, integer *lda, integer *ipiv, complex *work, integer *info);
 
 #ifdef __cplusplus
 }

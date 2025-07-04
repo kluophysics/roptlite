@@ -28,7 +28,7 @@ Manifold --> MultiManifolds --> FixedRankQ2F
 #include "Manifolds/MultiManifolds.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
     enum FixedRankQ2FMetric { FRQ2FEUC, FRQ2FHH, FRQ2FMETRICLENGTH };
 
@@ -130,5 +130,5 @@ namespace roptlite{
 
         virtual Vector &EucHvToHvHH(const Variable &x, const Vector &etax, const Vector &exix, const Problem *prob, Vector *result) const;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of FIXEDRANKQ2F_H */

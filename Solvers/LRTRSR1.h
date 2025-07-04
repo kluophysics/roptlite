@@ -13,7 +13,7 @@ Solvers --> SolversSM --> SolversSMTR --> LRTRSR1
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
     class LRTRSR1 : public SolversSMTR{
     public:
@@ -115,5 +115,5 @@ namespace roptlite{
 //        realdp *SS, *SY; /*SS is S^\flat S which is the matrix Q defined in [HAG2014, (46)],
 //                                SY is the matrix P defined in [HAG2014, (46)] */
     };
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of LRTRSR1_H */

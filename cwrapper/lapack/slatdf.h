@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_slatdf_(integer *ijob, integer *n, real *z__, integer *ldz, real *rhs, real *rdsum, real *rdscal, integer *ipiv, integer *jpiv);
+int slatdf_(integer *ijob, integer *n, real *z__, integer *ldz, real *rhs, real *rdsum, real *rdscal, integer *ipiv, integer *jpiv);
 
 #ifdef __cplusplus
 }

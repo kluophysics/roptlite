@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_dlasd9_(integer *icompq, integer *ldu, integer *k, doublereal *d__, doublereal *z__, doublereal *vf, doublereal *vl, doublereal *difl, doublereal *difr, doublereal *dsigma, doublereal *work, integer *info);
+int dlasd9_(integer *icompq, integer *ldu, integer *k, doublereal *d__, doublereal *z__, doublereal *vf, doublereal *vl, doublereal *difl, doublereal *difr, doublereal *dsigma, doublereal *work, integer *info);
 
 #ifdef __cplusplus
 }

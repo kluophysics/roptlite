@@ -15,7 +15,7 @@ Solvers --> SolversSM --> SolversSMLS --> RBroydenFamily
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class RBroydenFamily : public SolversSMLS{
 	public:
@@ -103,5 +103,5 @@ namespace roptlite{
         LinearOPE H; /*The inverse Hessian approximations for current and next iterations respectively*/
 
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of RBROYDENFAMILY_H */

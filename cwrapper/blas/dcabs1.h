@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-doublereal roptlite_dcabs1_(doublecomplex *z__);
+doublereal dcabs1_(doublecomplex *z__);
 
 #ifdef __cplusplus
 }

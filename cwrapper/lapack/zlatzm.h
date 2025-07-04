@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_zlatzm_(char *side, integer *m, integer *n, doublecomplex *v, integer *incv, doublecomplex *tau, doublecomplex *c1, doublecomplex *c2, integer *ldc, doublecomplex *work);
+int zlatzm_(char *side, integer *m, integer *n, doublecomplex *v, integer *incv, doublecomplex *tau, doublecomplex *c1, doublecomplex *c2, integer *ldc, doublecomplex *work);
 
 #ifdef __cplusplus
 }

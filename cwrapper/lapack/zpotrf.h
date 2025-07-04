@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_zpotrf_(char *uplo, integer *n, doublecomplex *a, integer *lda, integer *info);
+int zpotrf_(char *uplo, integer *n, doublecomplex *a, integer *lda, integer *info);
 
 #ifdef __cplusplus
 }

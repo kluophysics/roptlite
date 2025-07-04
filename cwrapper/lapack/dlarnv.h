@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_dlarnv_(integer *idist, integer *iseed, integer *n, doublereal *x);
+int dlarnv_(integer *idist, integer *iseed, integer *n, doublereal *x);
 
 #ifdef __cplusplus
 }

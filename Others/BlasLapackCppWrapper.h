@@ -2911,7 +2911,7 @@ BLAS */
 #endif /* end of ifdef MATLAB_MEX_FILE */
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 //#include <dasum.h>
 //#include <daxpy.h>
 	void axpy_(integer *n, complex *ca, complex *cx, integer *incx, complex *cy, integer *incy);
@@ -3459,6 +3459,6 @@ namespace roptlite{
 ////	void BLAS_uscr_insert_entries(blas_sparse_matrix A, int nz, const complex *val, const int *indx, const int *jndx);
 ////	void BLAS_uscr_insert_entries(blas_sparse_matrix A, int nz, const doublecomplex *val, const int *indx, const int *jndx);
 
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 
 #endif

@@ -18,7 +18,7 @@ Problem --> GrassSVPCA
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class GrassSVPCA : public Problem{
 	public:
@@ -43,5 +43,5 @@ namespace roptlite{
 		mutable integer p;
         realdp L;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif

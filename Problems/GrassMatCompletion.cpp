@@ -2,7 +2,7 @@
 #include "Problems/GrassMatCompletion.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
     
     GrassMatCompletion::GrassMatCompletion(integer *inir, integer *injc, realdp *invals, integer innz, integer inN, integer inD, integer inr)
     {
@@ -242,4 +242,4 @@ namespace roptlite{
         delete[] jdex;
         return *result;
     };
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

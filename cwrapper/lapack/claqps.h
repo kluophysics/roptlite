@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_claqps_(integer *m, integer *n, integer *offset, integer *nb, integer *kb, complex *a, integer *lda, integer *jpvt, complex *tau, real *vn1, real *vn2, complex *auxv, complex *f, integer *ldf);
+int claqps_(integer *m, integer *n, integer *offset, integer *nb, integer *kb, complex *a, integer *lda, integer *jpvt, complex *tau, real *vn1, real *vn2, complex *auxv, complex *f, integer *ldf);
 
 #ifdef __cplusplus
 }

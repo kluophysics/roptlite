@@ -14,7 +14,7 @@ Solvers --> SolversNSM --> SolversNSMSub --> SolversNSMSubLS
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
     /* Linesearch status. It is an output argument and users don't need to assign this enumerate to any member variable.
     NOCURVATURE: the second Wolfe condition is not satisfied
@@ -128,5 +128,5 @@ namespace roptlite{
         void ZoomLP(realdp a, realdp b);
 
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of SOLVERSNNSMSUBLS_H */

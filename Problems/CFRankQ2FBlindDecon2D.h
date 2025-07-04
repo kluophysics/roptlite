@@ -27,10 +27,10 @@ Problem --> CFRankQ2FBlindDecon2D
 #undef abs
 #include "Others/wavelet/wavelet.h"
 
-#ifdef ROPTLITE_WITH_FFTW
+#ifdef ROPTLIB_WITH_FFTW
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class CFRankQ2FBlindDecon2D : public Problem{
 	public:
@@ -58,7 +58,7 @@ namespace roptlite{
 		realdp d;
 		realdp mu;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif
 
 #endif

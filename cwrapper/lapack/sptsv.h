@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_sptsv_(integer *n, integer *nrhs, real *d__, real *e, real *b, integer *ldb, integer *info);
+int sptsv_(integer *n, integer *nrhs, real *d__, real *e, real *b, integer *ldb, integer *info);
 
 #ifdef __cplusplus
 }

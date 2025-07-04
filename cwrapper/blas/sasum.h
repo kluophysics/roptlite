@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-E_f roptlite_sasum_(integer *n, real *sx, integer *incx);
+E_f sasum_(integer *n, real *sx, integer *incx);
 
 #ifdef __cplusplus
 }

@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_slacon_(integer *n, real *v, real *x, integer *isgn, real *est, integer *kase);
+int slacon_(integer *n, real *v, real *x, integer *isgn, real *est, integer *kase);
 
 #ifdef __cplusplus
 }

@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_dscal_(integer *n, doublereal *da, doublereal *dx, integer *incx);
+int dscal_(integer *n, doublereal *da, doublereal *dx, integer *incx);
 
 #ifdef __cplusplus
 }

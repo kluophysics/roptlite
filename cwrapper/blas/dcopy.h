@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_dcopy_(integer *n, doublereal *dx, integer *incx, doublereal *dy, integer *incy);
+int dcopy_(integer *n, doublereal *dx, integer *incx, doublereal *dy, integer *incy);
 
 #ifdef __cplusplus
 }

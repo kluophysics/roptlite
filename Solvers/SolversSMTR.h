@@ -14,7 +14,7 @@ Solvers --> SolversSM --> SolversSMTR
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	/* output status of the truncated conjugate gradient. It is an output argument and users don't need to assign this enumerate to any member variable.
 	TR_NEGCURVTURE: Find negative curvature
@@ -130,5 +130,5 @@ namespace roptlite{
         
 //        double subprobtime;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif

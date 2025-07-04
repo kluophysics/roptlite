@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-E_f roptlite_slangb_(char *norm, integer *n, integer *kl, integer *ku, real *ab, integer *ldab, real *work);
+E_f slangb_(char *norm, integer *n, integer *kl, integer *ku, real *ab, integer *ldab, real *work);
 
 #ifdef __cplusplus
 }

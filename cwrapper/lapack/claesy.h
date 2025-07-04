@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_claesy_(complex *a, complex *b, complex *c__, complex *rt1, complex *rt2, complex *evscal, complex *cs1, complex *sn1);
+int claesy_(complex *a, complex *b, complex *c__, complex *rt1, complex *rt2, complex *evscal, complex *cs1, complex *sn1);
 
 #ifdef __cplusplus
 }

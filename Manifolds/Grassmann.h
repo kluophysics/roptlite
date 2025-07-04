@@ -15,7 +15,7 @@ Manifold --> Grassmann
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class Grassmann : public Manifold{
 	public:
@@ -91,5 +91,5 @@ namespace roptlite{
         mutable integer n; /*The number of row*/
 		mutable integer p; /*The number of column*/
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of GRASSMANN_H */

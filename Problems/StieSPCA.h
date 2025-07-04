@@ -17,7 +17,7 @@ Problem --> SPCA
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class StieSPCA : public Problem{
 	public:
@@ -44,5 +44,5 @@ namespace roptlite{
         Vector colnormB;
         realdp L;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of GRASSRQ_H */

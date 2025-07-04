@@ -2,7 +2,7 @@
 #include "Manifolds/CStiefel.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	CStiefel::CStiefel(integer inn, integer inp)
 	{
@@ -719,4 +719,4 @@ namespace roptlite{
 			}
 		}
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

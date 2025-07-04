@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-E_f roptlite_slansp_(char *norm, char *uplo, integer *n, real *ap, real *work);
+E_f slansp_(char *norm, char *uplo, integer *n, real *ap, real *work);
 
 #ifdef __cplusplus
 }

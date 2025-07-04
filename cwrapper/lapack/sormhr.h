@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_sormhr_(char *side, char *trans, integer *m, integer *n, integer *ilo, integer *ihi, real *a, integer *lda, real *tau, real *c__, integer *ldc, real *work, integer *lwork, integer *info);
+int sormhr_(char *side, char *trans, integer *m, integer *n, integer *ilo, integer *ihi, real *a, integer *lda, real *tau, real *c__, integer *ldc, real *work, integer *lwork, integer *info);
 
 #ifdef __cplusplus
 }

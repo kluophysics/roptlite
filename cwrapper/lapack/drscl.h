@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_drscl_(integer *n, doublereal *sa, doublereal *sx, integer *incx);
+int drscl_(integer *n, doublereal *sa, doublereal *sx, integer *incx);
 
 #ifdef __cplusplus
 }

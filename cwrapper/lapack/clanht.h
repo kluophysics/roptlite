@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-E_f roptlite_clanht_(char *norm, integer *n, real *d__, complex *e);
+E_f clanht_(char *norm, integer *n, real *d__, complex *e);
 
 #ifdef __cplusplus
 }

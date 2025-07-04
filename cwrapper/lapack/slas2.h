@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_slas2_(real *f, real *g, real *h__, real *ssmin, real *ssmax);
+int slas2_(real *f, real *g, real *h__, real *ssmin, real *ssmax);
 
 #ifdef __cplusplus
 }

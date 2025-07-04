@@ -4,8 +4,8 @@
 
 	- From The Shogakukan DICTIONARY OF NEW ENGLISH (Second edition) */
 
-#ifndef ROPTLITE_F2C_INCLUDE
-#define ROPTLITE_F2C_INCLUDE
+#ifndef ROPTLIB_F2C_INCLUDE
+#define ROPTLIB_F2C_INCLUDE
 
 #ifdef SINGLE_PRECISION
 typedef int integer;

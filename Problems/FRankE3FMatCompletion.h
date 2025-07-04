@@ -18,7 +18,7 @@ Problem --> FRankE3FMatCompletion
 #include "Manifolds/FixedRankE3F.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class FRankE3FMatCompletion : public Problem{
 	public:
@@ -50,5 +50,5 @@ namespace roptlite{
 //        mutable SparseMatrix *SMEucRepGrad;
 //        mutable SparseMatrix *SMEucRepHess;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif

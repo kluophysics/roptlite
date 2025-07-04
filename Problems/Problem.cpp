@@ -2,7 +2,7 @@
 #include "Problems/Problem.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	void Problem::CheckGradHessian(Variable xin) const
 	{
@@ -275,4 +275,4 @@ namespace roptlite{
     {
         NumGradHess = inNumGradHess;
     };
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

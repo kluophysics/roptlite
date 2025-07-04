@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-doublereal roptlite_dzsum1_(integer *n, doublecomplex *cx, integer *incx);
+doublereal dzsum1_(integer *n, doublecomplex *cx, integer *incx);
 
 #ifdef __cplusplus
 }

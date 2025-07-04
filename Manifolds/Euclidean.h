@@ -13,7 +13,7 @@ Manifold --> Euclidean
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class Euclidean : public Manifold{
 	public:
@@ -47,5 +47,5 @@ namespace roptlite{
         
         bool iscomplex;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of EUCLIDEAN_H */

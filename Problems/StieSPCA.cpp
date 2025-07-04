@@ -2,7 +2,7 @@
 #include "Problems/StieSPCA.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	StieSPCA::StieSPCA(Vector inB, realdp inlambda, integer inn, integer inm, integer inp, integer inlengthW)
 	{
@@ -159,4 +159,4 @@ namespace roptlite{
         }
         return *result;
     };
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

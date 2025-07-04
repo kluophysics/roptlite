@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-E_f roptlite_slapy3_(real *x, real *y, real *z__);
+E_f slapy3_(real *x, real *y, real *z__);
 
 #ifdef __cplusplus
 }

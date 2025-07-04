@@ -15,7 +15,7 @@ Problem --> GrassRQ
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class GrassRQ : public Problem{
 	public:
@@ -30,5 +30,5 @@ namespace roptlite{
 		integer n;
 		integer p;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of GRASSRQ_H */

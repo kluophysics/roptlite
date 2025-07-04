@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_sppequ_(char *uplo, integer *n, real *ap, real *s, real *scond, real *amax, integer *info);
+int sppequ_(char *uplo, integer *n, real *ap, real *s, real *scond, real *amax, integer *info);
 
 #ifdef __cplusplus
 }

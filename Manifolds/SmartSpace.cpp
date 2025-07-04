@@ -2,7 +2,7 @@
 #include "Manifolds/SmartSpace.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	void SmartSpace::Initialization(integer numberofdimensions, ...)
 	{
@@ -325,4 +325,4 @@ namespace roptlite{
         }
         length = 0;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

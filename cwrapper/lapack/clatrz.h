@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_clatrz_(integer *m, integer *n, integer *l, complex *a, integer *lda, complex *tau, complex *work);
+int clatrz_(integer *m, integer *n, integer *l, complex *a, integer *lda, complex *tau, complex *work);
 
 #ifdef __cplusplus
 }

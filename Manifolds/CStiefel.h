@@ -14,7 +14,7 @@ Manifold --> CStiefel
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	/*Note that not all metrics, retractions and vector transports have been done.*/
 
@@ -193,6 +193,6 @@ namespace roptlite{
 		SIAM Journal on Optimization, 25(3), 1660-1685, 2015.*/
 		virtual Vector &DiffPolarRetraction(const Variable &x, const Vector &etax, const Variable &y, const Vector &xix, Vector *result, bool IsEtaXiSameDir = false) const;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 
 #endif

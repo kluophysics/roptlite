@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_dswap_(integer *n, doublereal *dx, integer *incx, doublereal *dy, integer *incy);
+int dswap_(integer *n, doublereal *dx, integer *incx, doublereal *dy, integer *incy);
 
 #ifdef __cplusplus
 }

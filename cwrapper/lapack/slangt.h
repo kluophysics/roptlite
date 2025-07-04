@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-E_f roptlite_slangt_(char *norm, integer *n, real *dl, real *d__, real *du);
+E_f slangt_(char *norm, integer *n, real *dl, real *d__, real *du);
 
 #ifdef __cplusplus
 }

@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_csyr_(char *uplo, integer *n, complex *alpha, complex *x, integer *incx, complex *a, integer *lda);
+int csyr_(char *uplo, integer *n, complex *alpha, complex *x, integer *incx, complex *a, integer *lda);
 
 #ifdef __cplusplus
 }

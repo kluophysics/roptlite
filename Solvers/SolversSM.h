@@ -19,7 +19,7 @@ Solvers --> SolversSM
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	/*The algorithm is stopped when a value (specified by ther parameter) is less than the "Tolerance" (a member variable)
 	The value should be assigned to the member variable: "Stop_Criterion" and the applicable values are
@@ -104,6 +104,6 @@ namespace roptlite{
 		Vector gradSeries; /*an array to store the norm of gradient after each iteration */
 	};
 
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 
 #endif /* end of SOLVERSSM_H */

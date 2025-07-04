@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_srotg_(real *sa, real *sb, real *c__, real *s);
+int srotg_(real *sa, real *sb, real *c__, real *s);
 
 #ifdef __cplusplus
 }

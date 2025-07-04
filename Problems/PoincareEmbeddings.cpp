@@ -1,7 +1,7 @@
 #include "Problems/PoincareEmbeddings.h"
 
 /*Define the namespace*/
-namespace roptlite {
+namespace ROPTLIB {
 
 	PoincareEmbeddings::PoincareEmbeddings(Vector indata, integer inn, integer inXNum, integer inNegSampleNum, realdp inSampleDampening)
 	{
@@ -397,4 +397,4 @@ namespace roptlite {
 	};
 
 
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

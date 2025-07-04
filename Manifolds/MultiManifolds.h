@@ -27,7 +27,7 @@ Manifold --> MultiManifolds
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class MultiManifolds : public Manifold{
 	public:
@@ -211,5 +211,5 @@ namespace roptlite{
 		numoftotalmani = 3;  (2 Stiefel) + (1 Euclidean) = 3, i.e., 3 manifolds in total.
 		*/
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of MULTIMANIFOLDS_H */

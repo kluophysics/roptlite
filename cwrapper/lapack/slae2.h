@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_slae2_(real *a, real *b, real *c__, real *rt1, real *rt2);
+int slae2_(real *a, real *b, real *c__, real *rt1, real *rt2);
 
 #ifdef __cplusplus
 }

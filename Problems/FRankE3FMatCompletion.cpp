@@ -2,7 +2,7 @@
 #include "Problems/FRankE3FMatCompletion.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	FRankE3FMatCompletion::FRankE3FMatCompletion(unsigned long *inir, unsigned long *injc, unsigned long *injcc, realdp *inV, integer innz, integer inm, integer inn, integer inr)
 	{
@@ -165,4 +165,4 @@ namespace roptlite{
         
         return *result;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

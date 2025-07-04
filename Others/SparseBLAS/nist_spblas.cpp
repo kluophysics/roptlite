@@ -2,7 +2,7 @@
 //This is the C++ version of Sparse BLAS downloaded from
 //math.nist.gov/spblas/
 //I slightly modified it such that it is compatible with
-//roptlite.
+//ROPTLIB.
 //
 //
 //--Wen Huang

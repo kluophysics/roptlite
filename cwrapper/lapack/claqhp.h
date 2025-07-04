@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_claqhp_(char *uplo, integer *n, complex *ap, real *s, real *scond, real *amax, char *equed);
+int claqhp_(char *uplo, integer *n, complex *ap, real *s, real *scond, real *amax, char *equed);
 
 #ifdef __cplusplus
 }

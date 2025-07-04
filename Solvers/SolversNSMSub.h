@@ -18,7 +18,7 @@ Solvers --> SolversNSM --> SolversNSMSub
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class SolversNSMSub : public SolversNSM{
 	public:
@@ -87,6 +87,6 @@ namespace roptlite{
 		Variable *Xs;
 	};
 
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 
 #endif /* end of SOLVERSNSM_H */

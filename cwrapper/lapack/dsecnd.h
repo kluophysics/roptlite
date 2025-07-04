@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-doublereal roptlite_dsecnd_(void);
+doublereal dsecnd_(void);
 
 #ifdef __cplusplus
 }

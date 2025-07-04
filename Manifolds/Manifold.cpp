@@ -2,7 +2,7 @@
 #include "Manifolds/Manifold.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	Manifold::~Manifold(void)
 	{
@@ -1709,4 +1709,4 @@ namespace roptlite{
         delete[] tmpp;
     }
 */
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

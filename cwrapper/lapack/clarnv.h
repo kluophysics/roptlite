@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_clarnv_(integer *idist, integer *iseed, integer *n, complex *x);
+int clarnv_(integer *idist, integer *iseed, integer *n, complex *x);
 
 #ifdef __cplusplus
 }

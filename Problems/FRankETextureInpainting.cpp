@@ -1,10 +1,10 @@
 
 #include "Problems/FRankETextureInpainting.h"
 
-#ifdef ROPTLITE_WITH_FFTW
+#ifdef ROPTLIB_WITH_FFTW
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	FRankETextureInpainting::FRankETextureInpainting(unsigned long *inir, unsigned long *injc, unsigned long *injcc, unsigned long innzmax, Vector inA, realdp inlambda, integer inm, integer inn, integer inr, integer inlengthW, integer intype)
 	{
@@ -148,6 +148,6 @@ namespace roptlite{
         }
         return *result;
     };
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 
 #endif

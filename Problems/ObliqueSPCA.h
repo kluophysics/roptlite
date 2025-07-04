@@ -18,7 +18,7 @@ Problem --> ObliqueSPCA
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class ObliqueSPCA : public Problem{
 	public:
@@ -45,5 +45,5 @@ namespace roptlite{
 		mutable integer p;
         realdp L;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif

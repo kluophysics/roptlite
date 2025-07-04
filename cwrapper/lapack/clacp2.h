@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_clacp2_(char *uplo, integer *m, integer *n, real *a, integer *lda, complex *b, integer *ldb);
+int clacp2_(char *uplo, integer *m, integer *n, real *a, integer *lda, complex *b, integer *ldb);
 
 #ifdef __cplusplus
 }

@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_sgelq2_(integer *m, integer *n, real *a, integer *lda, real *tau, real *work, integer *info);
+int sgelq2_(integer *m, integer *n, real *a, integer *lda, real *tau, real *work, integer *info);
 
 #ifdef __cplusplus
 }

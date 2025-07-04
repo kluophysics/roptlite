@@ -15,7 +15,7 @@ Solvers --> SolversSM --> SolversSMSto --> RSGD
 #include <algorithm>
 
 /*Define the namespace*/
-namespace roptlite {
+namespace ROPTLIB {
 	class RSGD : public SolversSMSto {
 	public:
 		/*The contructor of RSGD method. It calls the function Solvers::Initialization.

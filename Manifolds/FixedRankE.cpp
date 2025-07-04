@@ -2,7 +2,7 @@
 #include "Manifolds/FixedRankE.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	FixedRankE::FixedRankE(integer inm, integer inn, integer inr)
 	{
@@ -417,4 +417,4 @@ namespace roptlite{
         result->AddToFields("dV", dVxix);
         return *result;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

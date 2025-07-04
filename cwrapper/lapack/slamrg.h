@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_slamrg_(integer *n1, integer *n2, real *a, integer *strd1, integer *strd2, integer *index);
+int slamrg_(integer *n1, integer *n2, real *a, integer *strd1, integer *strd2, integer *index);
 
 #ifdef __cplusplus
 }

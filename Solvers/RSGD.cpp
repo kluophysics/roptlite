@@ -1,7 +1,7 @@
 #include "Solvers/RSGD.h"
 
 /*Define the namespace*/
-namespace roptlite {
+namespace ROPTLIB {
 	RSGD::RSGD(const Problem *prob, const Variable *initialx)
 	{
 		Initialization(prob, initialx);

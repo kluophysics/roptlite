@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_caxpy_(integer *n, complex *ca, complex *cx, integer *incx, complex *cy, integer *incy);
+int caxpy_(integer *n, complex *ca, complex *cx, integer *incx, complex *cy, integer *incy);
 
 #ifdef __cplusplus
 }

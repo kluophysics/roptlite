@@ -1,7 +1,7 @@
 #include "Solvers/SolversSMSto.h"
 
 /*Define the namespace*/
-namespace roptlite {
+namespace ROPTLIB {
 
 	void SolversSMSto::CheckParams(void)
 	{

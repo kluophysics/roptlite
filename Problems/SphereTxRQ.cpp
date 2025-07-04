@@ -2,7 +2,7 @@
 #include "Problems/SphereTxRQ.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
     Vector MinMaxEigValHessian(Variable *X, Manifold *Domain, const Problem *Prob)
     {
@@ -100,4 +100,4 @@ namespace roptlite{
         
         return mani->ScalarTimesVector(root, -2, *result, result);
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

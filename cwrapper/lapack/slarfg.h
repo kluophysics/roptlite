@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_slarfg_(integer *n, real *alpha, real *x, integer *incx, real *tau);
+int slarfg_(integer *n, real *alpha, real *x, integer *incx, real *tau);
 
 #ifdef __cplusplus
 }

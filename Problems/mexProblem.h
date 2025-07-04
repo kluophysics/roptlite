@@ -17,7 +17,7 @@ Problem
 #include "matrix.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class mexProblem : public Problem{
 	public:
@@ -40,16 +40,16 @@ namespace roptlite{
 		/*The preconditioner for this problem*/
 		virtual Vector &PreConditioner(const Variable &x, const Vector &eta, Vector *result) const;
 
-		/*This function converts the format of storage in roptlite to the format
+		/*This function converts the format of storage in ROPTLIB to the format
 		of storage in Matlab*/
 		static void ObtainMxArrayFromElement(mxArray *&Xmx, const Element *X);
 
 		/*This function converts the format of storage in Matlab to the format
-		of storage in roptlite*/
+		of storage in ROPTLIB*/
 		static void ObtainElementFromMxArray(Element *X, const mxArray *Xmx);
 
 		/*This function add the values of fields in the format of storage in Matlab to the format
-		of storage in roptlite*/
+		of storage in ROPTLIB*/
 		static void AddToElementFromMxArray(Element *X, const mxArray *Xmx);
 
 		/*S is a Matlab structure. This function obtain its field by key = name */
@@ -62,7 +62,7 @@ namespace roptlite{
 		const mxArray *mxHess; /*Matlab function handle of the action of the Euclidean Hessian.*/
 		const mxArray *mxPreCon; /*Matlab function handle of the Preconditioner.*/
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of MATLAB_MEX_FILE */
 
 #endif /* end of MEXPROBLEM_H */

@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_zscal_(integer *n, doublecomplex *za, doublecomplex *zx, integer *incx);
+int zscal_(integer *n, doublecomplex *za, doublecomplex *zx, integer *incx);
 
 #ifdef __cplusplus
 }

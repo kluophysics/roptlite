@@ -2,7 +2,7 @@
 #include "Solvers/SVRLRBFGS.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
     
     SVRLRBFGS::SVRLRBFGS(const Problem *prob, const Variable *initialx)
     {
@@ -241,4 +241,4 @@ namespace roptlite{
         }
     };
     
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

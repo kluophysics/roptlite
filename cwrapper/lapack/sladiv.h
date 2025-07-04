@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_sladiv_(real *a, real *b, real *c__, real *d__, real *p, real *q);
+int sladiv_(real *a, real *b, real *c__, real *d__, real *p, real *q);
 
 #ifdef __cplusplus
 }

@@ -19,7 +19,7 @@ Problem --> SFRQLyapunov
 #include "Manifolds/SymFixedRankQ.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class SFRQLyapunov : public Problem{
 	public:
@@ -50,6 +50,6 @@ namespace roptlite{
 		integer n;
 		integer p;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 
 #endif /*SFRQLYAPUNOV_H*/

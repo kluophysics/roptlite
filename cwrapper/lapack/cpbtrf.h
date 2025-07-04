@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_cpbtrf_(char *uplo, integer *n, integer *kd, complex *ab, integer *ldab, integer *info);
+int cpbtrf_(char *uplo, integer *n, integer *kd, complex *ab, integer *ldab, integer *info);
 
 #ifdef __cplusplus
 }

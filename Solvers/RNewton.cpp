@@ -1,7 +1,7 @@
 #include "Solvers/RNewton.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	RNewton::RNewton(const Problem *prob, const Variable *initialx)
 	{
@@ -202,4 +202,4 @@ namespace roptlite{
 							}
 		}
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

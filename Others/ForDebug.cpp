@@ -1,7 +1,7 @@
 #include "Others/ForDebug.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 	realdp ForDebug::NormF(const realdp *V, integer length)
 	{
 		return std::sqrt(dot_(&length, const_cast<realdp *> (V), &GLOBAL::IONE, const_cast<realdp *> (V), &GLOBAL::IONE));
@@ -43,4 +43,4 @@ namespace roptlite{
 				}
 			}
 	}
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

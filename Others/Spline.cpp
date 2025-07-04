@@ -2,7 +2,7 @@
 #include "Others/Spline.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	int Spline::SplineUniformPeriodic(const realdp *Y, int n, realdp h, realdp *coefs)
 	{ /* solving system based on second derivatives. */
@@ -402,4 +402,4 @@ namespace roptlite{
 		output = dericoefs[0 * nn + i] * t + dericoefs[1 * nn + i];
 		return output;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

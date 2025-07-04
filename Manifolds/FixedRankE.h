@@ -25,7 +25,7 @@ Manifold --> FixedRankE
 #include "Manifolds/Manifold.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class FixedRankE : public Manifold{
 	public:
@@ -107,5 +107,5 @@ namespace roptlite{
 		mutable integer r; /*the rank of the matrix*/
         
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of FIXEDRANKE_H */

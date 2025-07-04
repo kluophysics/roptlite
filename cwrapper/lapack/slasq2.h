@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_slasq2_(integer *n, real *z__, integer *info);
+int slasq2_(integer *n, real *z__, integer *info);
 
 #ifdef __cplusplus
 }

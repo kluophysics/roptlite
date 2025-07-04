@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_sptcon_(integer *n, real *d__, real *e, real *anorm, real *rcond, real *work, integer *info);
+int sptcon_(integer *n, real *d__, real *e, real *anorm, real *rcond, real *work, integer *info);
 
 #ifdef __cplusplus
 }

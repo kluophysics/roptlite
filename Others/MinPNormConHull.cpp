@@ -2,7 +2,7 @@
 #include "Others/MinPNormConHull.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	realdp MinPNormConHull(const Manifold *Mani, Variable x, Vector *Ys, integer LYs, Vector &outSoln)
 	{
@@ -36,4 +36,4 @@ namespace roptlite{
 		delete RTRNewtonsolver;
 		return fopt;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

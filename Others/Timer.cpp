@@ -2,7 +2,7 @@
 #include "Others/Timer.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	unsigned long getTickCount(void)
 	{
@@ -35,4 +35,4 @@ namespace roptlite{
 
 		return currentTime;
 	}
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

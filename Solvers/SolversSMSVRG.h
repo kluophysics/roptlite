@@ -21,7 +21,7 @@
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
     
     class SolversSMSVRG : public SolversSMSto{
     public:
@@ -108,5 +108,5 @@ namespace roptlite{
 //        integer nsf;            /*the number of batch function evaluations*/
 //        integer nsg;            /*the number of batch gradient evaluations*/
     };
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif // end of SOLVERSSMSVRG_H

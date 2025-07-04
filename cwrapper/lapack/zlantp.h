@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-doublereal roptlite_zlantp_(char *norm, char *uplo, char *diag, integer *n, doublecomplex *ap, doublereal *work);
+doublereal zlantp_(char *norm, char *uplo, char *diag, integer *n, doublecomplex *ap, doublereal *work);
 
 #ifdef __cplusplus
 }

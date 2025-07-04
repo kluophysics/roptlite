@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_zswap_(integer *n, doublecomplex *zx, integer *incx, doublecomplex *zy, integer *incy);
+int zswap_(integer *n, doublecomplex *zx, integer *incx, doublecomplex *zy, integer *incy);
 
 #ifdef __cplusplus
 }

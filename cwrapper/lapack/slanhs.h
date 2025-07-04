@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-E_f roptlite_slanhs_(char *norm, integer *n, real *a, integer *lda, real *work);
+E_f slanhs_(char *norm, integer *n, real *a, integer *lda, real *work);
 
 #ifdef __cplusplus
 }

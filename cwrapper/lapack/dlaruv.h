@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_dlaruv_(integer *iseed, integer *n, doublereal *x);
+int dlaruv_(integer *iseed, integer *n, doublereal *x);
 
 #ifdef __cplusplus
 }

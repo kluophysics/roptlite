@@ -15,7 +15,7 @@ Solvers --> SolversSM --> SolversSMLS --> RNewton
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	/* output status of the truncated conjugate gradient. It is an output argument and users don't need to assign this enumerate to any member variable.
 	LSSM_NEGCURVTURE: Find negative curvature
@@ -85,5 +85,5 @@ namespace roptlite{
 		tCGLSSMstatusSet tCGLSSMstatus; /*the output status of the truncated conjugate gradient method*/
 		std::string *tCGLSSMstatusSetnames; /*the output names of the truncated conjugate gradient method*/
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of RNEWTON_H */

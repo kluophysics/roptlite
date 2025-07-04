@@ -2,7 +2,7 @@
 #include "Manifolds/CSymFixedRankQ.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	CSymFixedRankQ::CSymFixedRankQ(integer r, integer c)
 	{
@@ -746,4 +746,4 @@ namespace roptlite{
         
         return ExtrProjection(y, xix, result);
     };
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

@@ -19,7 +19,7 @@ In the current version, it only contains on function which prints a realdp array
 
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
     namespace GLOBAL{
         extern integer IZERO, IONE, ITWO;
@@ -33,5 +33,5 @@ namespace roptlite{
 		static void Print(const char *name, const realdp *M, integer row, integer col = 1, integer num = 1);
 		static realdp NormF(const realdp *V, integer length);
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif /* end of FORDEBUG_H */

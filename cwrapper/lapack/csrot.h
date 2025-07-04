@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_csrot_(integer *n, complex *cx, integer *incx, complex *cy, integer *incy, real *c__, real *s);
+int csrot_(integer *n, complex *cx, integer *incx, complex *cy, integer *incy, real *c__, real *s);
 
 #ifdef __cplusplus
 }

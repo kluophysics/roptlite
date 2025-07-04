@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-Z_f roptlite_zladiv_(doublecomplex * ret_val, doublecomplex *x, doublecomplex *y);
+Z_f zladiv_(doublecomplex * ret_val, doublecomplex *x, doublecomplex *y);
 
 #ifdef __cplusplus
 }

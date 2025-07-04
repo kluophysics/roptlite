@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-E_f roptlite_scasum_(integer *n, complex *cx, integer *incx);
+E_f scasum_(integer *n, complex *cx, integer *incx);
 
 #ifdef __cplusplus
 }

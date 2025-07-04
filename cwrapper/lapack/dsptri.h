@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_dsptri_(char *uplo, integer *n, doublereal *ap, integer *ipiv, doublereal *work, integer *info);
+int dsptri_(char *uplo, integer *n, doublereal *ap, integer *ipiv, doublereal *work, integer *info);
 
 #ifdef __cplusplus
 }

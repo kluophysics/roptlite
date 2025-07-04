@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_slaruv_(integer *iseed, integer *n, real *x);
+int slaruv_(integer *iseed, integer *n, real *x);
 
 #ifdef __cplusplus
 }

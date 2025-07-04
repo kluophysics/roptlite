@@ -2,7 +2,7 @@
 #include "Problems/FRankEWeightApprox.h"
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	FRankEWeightApprox::FRankEWeightApprox(Vector inA, Vector inW, integer inm, integer inn, integer inr)
 	{
@@ -42,4 +42,4 @@ namespace roptlite{
         result->Reshape(m, n);
         return *result; /* 2.0 * (W * etax.Reshape(m * n)).Reshape(m, n); */
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/

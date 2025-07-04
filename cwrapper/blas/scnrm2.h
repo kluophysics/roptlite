@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-E_f roptlite_scnrm2_(integer *n, complex *x, integer *incx);
+E_f scnrm2_(integer *n, complex *x, integer *incx);
 
 #ifdef __cplusplus
 }

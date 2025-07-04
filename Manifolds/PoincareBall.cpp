@@ -1,7 +1,7 @@
 #include "Manifolds/PoincareBall.h"
 
 /*Define the namespace*/
-namespace roptlite {
+namespace ROPTLIB {
 
 	PoincareBall::PoincareBall(integer inn)
 	{

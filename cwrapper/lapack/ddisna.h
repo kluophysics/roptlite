@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_ddisna_(char *job, integer *m, integer *n, doublereal *d__, doublereal *sep, integer *info);
+int ddisna_(char *job, integer *m, integer *n, doublereal *d__, doublereal *sep, integer *info);
 
 #ifdef __cplusplus
 }

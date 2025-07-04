@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_dlarre_(integer *n, doublereal *d__, doublereal *e, doublereal *tol, integer *nsplit, integer *isplit, integer *m, doublereal *w, doublereal *woff, doublereal *gersch, doublereal *work, integer *info);
+int dlarre_(integer *n, doublereal *d__, doublereal *e, doublereal *tol, integer *nsplit, integer *isplit, integer *m, doublereal *w, doublereal *woff, doublereal *gersch, doublereal *work, integer *info);
 
 #ifdef __cplusplus
 }

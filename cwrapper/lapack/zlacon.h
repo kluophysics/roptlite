@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_zlacon_(integer *n, doublecomplex *v, doublecomplex *x, doublereal *est, integer *kase);
+int zlacon_(integer *n, doublecomplex *v, doublecomplex *x, doublereal *est, integer *kase);
 
 #ifdef __cplusplus
 }

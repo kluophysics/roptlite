@@ -22,10 +22,10 @@ Problem --> CSFRQPhaseRetrieval
 #include "Manifolds/Element.h"
 #include "Manifolds/CSymFixedRankQ.h"
 
-#ifdef ROPTLITE_WITH_FFTW
+#ifdef ROPTLIB_WITH_FFTW
 
 /*Define the namespace*/
-namespace roptlite{
+namespace ROPTLIB{
 
 	class CSFRQPhaseRetrieval : public Problem{
 	public:
@@ -51,6 +51,6 @@ namespace roptlite{
 		mutable integer r;
 		mutable integer m;
 	};
-}; /*end of roptlite namespace*/
+}; /*end of ROPTLIB namespace*/
 #endif
 #endif /*CSFRQPHASERETRIEVAL_H*/

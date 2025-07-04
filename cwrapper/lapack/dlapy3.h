@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-doublereal roptlite_dlapy3_(doublereal *x, doublereal *y, doublereal *z__);
+doublereal dlapy3_(doublereal *x, doublereal *y, doublereal *z__);
 
 #ifdef __cplusplus
 }

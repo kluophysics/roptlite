@@ -4,7 +4,7 @@ extern "C" {
 
 #include "f2c.h" 
 
-void roptlite_crotg_(complex *ca, complex *cb, real *c__, complex *s);
+int crotg_(complex *ca, complex *cb, real *c__, complex *s);
 
 #ifdef __cplusplus
 }
