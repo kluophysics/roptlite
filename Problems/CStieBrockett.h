@@ -15,7 +15,7 @@ Problem --> CStieBrockett
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class CStieBrockett : public Problem{
 	public:
@@ -31,5 +31,5 @@ namespace ROPTLIB{
 		integer n;
 		integer p;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of CSTIEBROCKETT_H */

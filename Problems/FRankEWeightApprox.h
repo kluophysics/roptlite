@@ -21,7 +21,7 @@ Problem --> FRankWeightApprox
 #include "Manifolds/FixedRankE.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class FRankEWeightApprox : public Problem{
 	public:
@@ -38,5 +38,5 @@ namespace ROPTLIB{
 		integer n;
 		integer r;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif

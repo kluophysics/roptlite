@@ -1,7 +1,7 @@
 
 #include "test/TestSPDKarcherMean.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testSPDKarcherMean(void)
 {

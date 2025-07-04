@@ -17,7 +17,7 @@ Solvers --> SolversSM --> RAMSGRAD
 #include <algorithm>
 
 /*Define the namespace*/
-namespace ROPTLIB {
+namespace ROPTLITE {
 //	enum RAMSGRADLR_SCHEDULER { FIXED, DECAY, STEPSIZELENGTH_RAMSGRADLR };
 	class RAMSGRAD : public SolversSMSto {
 	public:
@@ -134,6 +134,6 @@ namespace ROPTLIB {
 //        integer nsf;            /*the number of batch function evaluations*/
 //        integer nsg;            /*the number of batch gradient evaluations*/
 	};
-};/*end of ROPTLIB namespace*/
+};/*end of ROPTLITE namespace*/
 
 #endif /* end of RAMSGRAD_H */

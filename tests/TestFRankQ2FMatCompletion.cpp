@@ -1,6 +1,6 @@
 #include "test/TestFRankQ2FMatCompletion.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 //void testLRMatrixCompletionMore(void)
 //{

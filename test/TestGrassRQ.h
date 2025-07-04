@@ -46,7 +46,7 @@ This is the test file for the Reyleigh Quotient problem defined in GrassRQ.h and
 /*The global head file*/
 #include "Others/def.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 /*The main test function*/
 void testGrassRQ(void);

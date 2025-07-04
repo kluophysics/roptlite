@@ -54,7 +54,7 @@ This is the test file for the Brocokett problem defined in StieBrockett.h and St
 
 #include "test/DriverMexProb.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 realdp LinesearchInput(integer iter, const Variable &x1, const Vector &exeta1, realdp initialstepsize, realdp initialslope, const Problem *prob, const Solvers *solver);
 bool MyStop(const Variable &x, const Vector &funSeries, integer lengthSeries, realdp finalval, realdp initval, const Problem *prob, const Solvers *solver);

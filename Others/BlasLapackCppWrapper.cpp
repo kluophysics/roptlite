@@ -9,7 +9,7 @@ More functions will be added in this class.
 #include "Others/BlasLapackCppWrapper.h"
 
 /*Define the namespace */
-namespace ROPTLIB {
+namespace ROPTLITE {
 	//#include <dasum.h>
 	//#include <daxpy.h>
 	void axpy_(integer *n, complex *ca, complex *cx, integer *incx, complex *cy, integer *incy)
@@ -1262,4 +1262,4 @@ namespace ROPTLIB {
 ////		BLAS_zuscr_insert_entries(A, nz, val, indx, jndx);
 ////	}
 ////#endif
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

@@ -17,7 +17,7 @@ Problem --> SPDKarcherMean
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class SPDKarcherMean : public Problem{
 	public:
@@ -39,5 +39,5 @@ namespace ROPTLIB{
 		integer n;
 		integer num;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of STIEBROCKETT_H */

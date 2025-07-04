@@ -51,7 +51,7 @@ This is the test file for the Sparest Vector problem defined in SphereSparestVec
 /*The global head file*/
 #include "Others/def.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 /*The main test function*/
 void testSphereSparsestVector(void);

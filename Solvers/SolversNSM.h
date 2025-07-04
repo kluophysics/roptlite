@@ -26,7 +26,7 @@ NSM_DIR_F_0: \|gf_k\| / \|gf_0\|*/
 enum StopCritNSM{ NSM_FUN, NSM_FUN_REL, NSM_DIR_F, NSM_DIR_F_0, STOPCRITNNSMLENGTH };
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	/*Compute min_{y in convex hull of gfs and prefgs are tangent vectors at the tangent space at x} ||y||
 	It is defined in MinPNormConHull.h and MinPNormConHull.cpp */
@@ -97,6 +97,6 @@ namespace ROPTLIB{
 		Vector dirSeries; /*an array to store the norm of search direction after each iteration*/
 	};
 
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 
 #endif /* end of SOLVERSNSM_H */

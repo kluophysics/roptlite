@@ -13,7 +13,7 @@ Solvers --> SolversNSM --> SolversNSMPGLS
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
     enum RPGLSVariant{ LSPG_REGULAR, LSPG_ADALIPSCHITZ, LSPG_BB, RPGVARIANTLENGTH };
 
@@ -105,5 +105,5 @@ namespace ROPTLIB{
         
         std::string *LSstatusSetnames;    /*This string array is to store the line search status names*/
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of SOLVERSNSMPGLS_H */

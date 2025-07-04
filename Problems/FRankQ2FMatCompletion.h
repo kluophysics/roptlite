@@ -18,7 +18,7 @@ Problem --> FRankQ2FMatCompletion
 #include "Manifolds/FixedRankQ2F.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class FRankQ2FMatCompletion : public Problem{
 	public:
@@ -47,5 +47,5 @@ namespace ROPTLIB{
 		mutable integer n;
 		mutable integer r;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif

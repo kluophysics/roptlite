@@ -54,7 +54,7 @@ This is the test file for the Brocokett problem defined in StieBrockett.h and St
 /*The global head file*/
 #include "Others/def.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 /*The main test function*/
 void testProdStieSumBrockett(void);

@@ -1,7 +1,7 @@
 #include "Solvers/RADAMSP.h"
 
 /*Define the namespace*/
-namespace ROPTLIB {
+namespace ROPTLITE {
 
 	RADAMSP::RADAMSP(const Problem *prob, const Variable *initialx)
 	{

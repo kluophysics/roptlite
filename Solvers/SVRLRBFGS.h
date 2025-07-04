@@ -14,7 +14,7 @@
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
     
     class SVRLRBFGS : public SolversSMSVRG{
     public:

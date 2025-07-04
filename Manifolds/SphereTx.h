@@ -14,7 +14,7 @@ Manifold --> SphereTx
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class SphereTx : public Manifold{
 	public:
@@ -75,5 +75,5 @@ namespace ROPTLIB{
 		Manifold *mani;
 		Variable root;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of SPHERETX_H */

@@ -28,7 +28,7 @@ Manifold --> MultiManifolds --> CFixedRankQ2F
 #include "Manifolds/MultiManifolds.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
     enum CFixedRankQ2FMetric { CFRQ2FEUC, CFRQ2FHH, CFRQ2FMETRICLENGTH };
 
@@ -130,5 +130,5 @@ namespace ROPTLIB{
 
         virtual Vector &EucHvToHvHH(const Variable &x, const Vector &etax, const Vector &exix, const Problem *prob, Vector *result) const;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of CFIXEDRANKQ2F_H */

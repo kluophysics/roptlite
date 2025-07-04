@@ -19,7 +19,7 @@ Solvers --> SolversSM --> SolversSMLS
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	/* Linesearch algorithms. It should be assigned to the member variable "LineSearch_LS".
 	ARMIJO: The Armijo-Goldstein condition. [DS83 Algorithm A6.3.1]
@@ -210,5 +210,5 @@ namespace ROPTLIB{
 		[NW06] : J.Nocedal and S.J.Wright.Numerical optimization.Springer, second edition, 2006 */
 		void Zoom(realdp x1, realdp fx1, realdp slopex1, realdp x2, realdp fx2);
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of SOLVERSSMLS_H */

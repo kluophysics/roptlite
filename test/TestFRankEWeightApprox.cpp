@@ -1,6 +1,6 @@
 #include "test/TestFRankEWeightApprox.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testFRankEWeightApprox(void)
 {

@@ -43,7 +43,7 @@ This is the test file to run the problem defined in EucQuadratic.h and EucQuadra
 
 #include "Others/def.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testEucQuadratic(void);
 

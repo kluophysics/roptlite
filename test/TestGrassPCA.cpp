@@ -1,7 +1,7 @@
 
 #include "test/TestGrassPCA.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testGrassPCA(void)
 {

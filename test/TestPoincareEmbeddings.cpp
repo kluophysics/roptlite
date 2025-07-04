@@ -1,6 +1,6 @@
 #include "test/TestPoincareEmbeddings.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testPoincareEmbeddings(void)
 {
@@ -36,7 +36,7 @@ void testPoincareEmbeddings(void)
 	// ------------------- read data -------------------
 
 //    std::string fname = "data/wn_mini.csv"; //wn_mini.csv---
-    std::string fname = "/Users/whuang/Documents/Syn/Codes/newROPTLIB/ROPTLIB/Matlab/ForCpp/wn_mini.csv"; //wn.csv---
+    std::string fname = "/Users/whuang/Documents/Syn/Codes/newROPTLITE/ROPTLITE/Matlab/ForCpp/wn_mini.csv"; //wn.csv---
 	std::ifstream csv_data(fname, std::ios::in);
 	std::string line;
 
@@ -58,9 +58,9 @@ void testPoincareEmbeddings(void)
 		sin.clear();
 		sin.str(line);
 		
-		while (std::getline(sin, word, ',')) //½«×Ö·û´®Á÷sinÖÐµÄ×Ö·û¶Áµ½field×Ö·û´®ÖÐ£¬ÒÔ¶ººÅÎª·Ö¸ô·û
+		while (std::getline(sin, word, ',')) //ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½sinï¿½Ðµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½fieldï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½Îªï¿½Ö¸ï¿½ï¿½ï¿½
 		{
-			wordsptr[i] = std::stol(word); //½«Ã¿Ò»¸ñÖÐµÄÊý¾ÝÖð¸öpush
+			wordsptr[i] = std::stol(word); //ï¿½ï¿½Ã¿Ò»ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½push
 			i++;
 		}
 	}

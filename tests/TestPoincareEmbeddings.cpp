@@ -1,6 +1,6 @@
 #include "test/TestPoincareEmbeddings.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testPoincareEmbeddings(void)
 {
@@ -36,7 +36,7 @@ void testPoincareEmbeddings(void)
 	// ------------------- read data -------------------
 
 //    std::string fname = "data/wn_mini.csv"; //wn_mini.csv---
-    std::string fname = "/Users/whuang/Documents/Syn/Codes/newROPTLIB/ROPTLIB/Matlab/ForCpp/wn_mini.csv"; //wn.csv---
+    std::string fname = "/Users/whuang/Documents/Syn/Codes/newROPTLITE/ROPTLITE/Matlab/ForCpp/wn_mini.csv"; //wn.csv---
 	std::ifstream csv_data(fname, std::ios::in);
 	std::string line;
 

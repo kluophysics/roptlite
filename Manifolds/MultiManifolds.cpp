@@ -1,7 +1,7 @@
 #include "Manifolds/MultiManifolds.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	MultiManifolds::MultiManifolds(integer numberofmanifolds, ...)
 	{
@@ -556,4 +556,4 @@ namespace ROPTLIB{
 			}
 		}
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

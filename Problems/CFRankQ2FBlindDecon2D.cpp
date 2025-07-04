@@ -1,10 +1,10 @@
 
 #include "Problems/CFRankQ2FBlindDecon2D.h"
 
-#ifdef ROPTLIB_WITH_FFTW
+#ifdef ROPTLITE_WITH_FFTW
 
 /*Define the namespace*/
-namespace ROPTLIB {
+namespace ROPTLITE {
 
 	CFRankQ2FBlindDecon2D::CFRankQ2FBlindDecon2D(Vector iny, SparseMatrix &inB, SparseMatrix &inC, integer inn1, integer inn2, integer inr, realdp inrho, realdp ind, realdp inmu)
 	{
@@ -144,5 +144,5 @@ namespace ROPTLIB {
         return *result;
 	};
 
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif

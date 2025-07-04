@@ -16,7 +16,7 @@ Problem --> StieSoftICA
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class StieSoftICA : public Problem{
 	public:
@@ -37,5 +37,5 @@ namespace ROPTLIB{
 		mutable integer p;
 		mutable integer N;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif // end of STIESOFTICA_H

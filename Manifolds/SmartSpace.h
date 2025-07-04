@@ -17,7 +17,7 @@ SmartSpace
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 #ifdef CHECKMEMORYDELETED
 	extern std::map<integer *, integer> *CheckMemoryDeleted;
@@ -112,6 +112,6 @@ namespace ROPTLIB{
 		/*allocate memory*/
 		void NewMemory(void);
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 
 #endif

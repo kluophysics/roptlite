@@ -14,7 +14,7 @@ Solvers --> SolversSM --> SolversSMSto
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB {
+namespace ROPTLITE {
 	/* Update the stepsize.
 	FIXED_STEPSIZE : The stepsize remains constant.
 	STEPLR : lr = InitStepsize / (iter)^theta.

@@ -2,7 +2,7 @@
 #include "Others/SparseMatrix.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
     SparseMatrix::SparseMatrix(integer inm, integer inn, unsigned long *inir, unsigned long *injc, unsigned long *injcc, realdp *invals, integer innz)
     {
@@ -65,14 +65,14 @@ namespace ROPTLIB{
         {
             for(integer i = 0; i < nz; i++)
             {
-                printf("i:%d, j:%d, val:%.10e\n", ir[i], jc[i], valsreal[i]);
+                printf("i:%lu, j:%lu, val:%.10e\n", ir[i], jc[i], valsreal[i]);
             }
             return;
         }
 
         for(integer i = 0; i < nz; i++)
         {
-            printf("i:%d, j:%d, val:%.10e+%.10e i\n", ir[i], jc[i], valscomplex[i].r, valscomplex[i].i);
+            printf("i:%lu, j:%lu, val:%.10e+%.10e i\n", ir[i], jc[i], valscomplex[i].r, valscomplex[i].i);
         }
         if(nz == 0)
             printf("Empty matrix.\n");
@@ -97,4 +97,4 @@ namespace ROPTLIB{
             delete [] valscomplex;
     };
 
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

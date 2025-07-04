@@ -2,7 +2,7 @@
 #include "Problems/SFRQLyapunov.h"
 
 /*Define the namespace*/
-namespace ROPTLIB {
+namespace ROPTLITE {
 
 	SFRQLyapunov::SFRQLyapunov(SparseMatrix &inA, SparseMatrix &inM, Vector inC, integer inp)
 	{
@@ -118,4 +118,4 @@ namespace ROPTLIB {
         *result = y;
         return *result;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

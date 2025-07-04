@@ -1,6 +1,6 @@
 #include "test/TestGrassMatCompletion.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testGrassMatCompletion(void)
 {

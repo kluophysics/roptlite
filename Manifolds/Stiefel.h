@@ -14,7 +14,7 @@ Manifold --> Stiefel
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	/*Note that not all metrics, retractions and vector transports have been done.*/
 
@@ -238,6 +238,6 @@ namespace ROPTLIB{
 		/*The implementation of inverse vector transport, it is the inverse of [Zhu2016, (22)] */
 		virtual Vector &CayleyInverseVectorTransport(const Variable &x, const Vector &etax, const Variable &y, const Vector &xiy, Vector *result) const;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 
 #endif

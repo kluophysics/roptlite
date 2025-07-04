@@ -25,7 +25,7 @@ test/TestStieSPCA.cpp
 test/TestStieSoftICA.cpp
 )
 
-target_include_directories(ROPTLIB
+target_include_directories(ROPTLITE
     PUBLIC
       ${CMAKE_CURRENT_SOURCE_DIR}
       ${CMAKE_CURRENT_SOURCE_DIR}/Manifolds

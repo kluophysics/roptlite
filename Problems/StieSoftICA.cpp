@@ -2,7 +2,7 @@
 #include "Problems/StieSoftICA.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	StieSoftICA::StieSoftICA(Vector inCs, integer inp)
 	{
@@ -160,4 +160,4 @@ namespace ROPTLIB{
         
         return *result;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

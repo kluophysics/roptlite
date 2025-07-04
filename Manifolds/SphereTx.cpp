@@ -2,7 +2,7 @@
 #include "Manifolds/SphereTx.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	SphereTx::SphereTx(Manifold *inmani, Variable *inroot)
 	{
@@ -165,4 +165,4 @@ namespace ROPTLIB{
         mani->VectorLinearCombination(root, 1, exix, - mani->Metric(root, EGrad, x), etax, result);
         return Projection(x, *result, result);
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

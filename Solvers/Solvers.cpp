@@ -2,7 +2,7 @@
 #include "Solvers/Solvers.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
     unsigned long starttime = 0;
 	void Solvers::CheckParams(void)
@@ -28,7 +28,7 @@ namespace ROPTLIB{
 
 	void Solvers::Run(void)
 	{
-#ifdef MATLAB_MEX_FILE /*If ROPTLIB is used in Matlab, then start the Matlab timer.*/
+#ifdef MATLAB_MEX_FILE /*If ROPTLITE is used in Matlab, then start the Matlab timer.*/
 		mxArray *lhs[1], *rhs[1];
 		rhs[0] = mxCreateString("tic");
 		mexCallMATLAB(0, lhs, 1, rhs, "feval");
@@ -142,4 +142,4 @@ namespace ROPTLIB{
 			}
 		}
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

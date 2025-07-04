@@ -26,7 +26,7 @@
 #include <algorithm>
 
 /*Define the namespace*/
-namespace ROPTLIB {
+namespace ROPTLITE {
 //	enum RADAMSPLR_SCHEDULER { FIXED_RADAMSPLR, DECAY_RADAMSPLR, STEPSIZELENGTH_RADAMSPLR};
 	class RADAMSP : public SolversSMSto {
 	public:
@@ -130,6 +130,6 @@ namespace ROPTLIB {
     private:
         bool IsProdMani;
 	};
-};/*end of ROPTLIB namespace*/
+};/*end of ROPTLITE namespace*/
 
 #endif /* end of RADAMSP_H */

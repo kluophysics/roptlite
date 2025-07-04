@@ -2,7 +2,7 @@
 #include "Solvers/LRBFGSSub.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	void LRBFGSSub::Run(void)
 	{
@@ -202,4 +202,4 @@ namespace ROPTLIB{
         }
     };
 
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

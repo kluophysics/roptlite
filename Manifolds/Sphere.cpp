@@ -2,7 +2,7 @@
 #include "Manifolds/Sphere.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	Sphere::Sphere(integer inn) :Stiefel(inn, 1)
 	{
@@ -263,4 +263,4 @@ namespace ROPTLIB{
 			}
 		}
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

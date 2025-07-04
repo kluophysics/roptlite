@@ -53,7 +53,7 @@ This is the test file for the Brocokett problem defined in StieBrockett.h and St
 
 #include "test/DriverMexProb.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 /*The main test function*/
 void testCStieBrockett(void);

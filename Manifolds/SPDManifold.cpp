@@ -2,7 +2,7 @@
 #include "Manifolds/SPDManifold.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	SPDManifold::SPDManifold(integer inn)
 	{
@@ -650,4 +650,4 @@ namespace ROPTLIB{
 	{
         return (x1 - x2).Fnorm();
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

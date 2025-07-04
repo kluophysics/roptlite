@@ -2,7 +2,7 @@
 #include "Problems/ObliqueSPCA.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 	ObliqueSPCA::ObliqueSPCA(Vector inA, realdp inlambda, integer inn, integer inm, integer inp)
 	{
 		A = inA;
@@ -123,4 +123,4 @@ namespace ROPTLIB{
         }
         return *result;
     };
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

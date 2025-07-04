@@ -35,7 +35,7 @@ where etax = dot{U}_1 D V^T + U dot{D}_1 V^T + U D dot{V}_1^T and xix = dot{U}_2
 #include "Manifolds/Euclidean.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class FixedRankE3F : public MultiManifolds{
 	public:
@@ -105,5 +105,5 @@ namespace ROPTLIB{
 		mutable integer n; /*the number of column*/
 		mutable integer r; /*the rank of the matrix*/
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif // end of LOWRANK_H

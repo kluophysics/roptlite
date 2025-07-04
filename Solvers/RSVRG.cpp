@@ -2,7 +2,7 @@
 #include "Solvers/RSVRG.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
     
     RSVRG::RSVRG(const Problem *prob, const Variable *initialx)
     {
@@ -33,4 +33,4 @@ namespace ROPTLIB{
     {
         Mani->ScalarTimesVector(x1, -1, gf1, &eta1);
     };
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

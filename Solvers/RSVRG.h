@@ -14,7 +14,7 @@
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
     
     class RSVRG : public SolversSMSVRG{
     public:
@@ -40,5 +40,5 @@ namespace ROPTLIB{
         /*Setting parameters (member variables) to be default values */
         virtual void SetDefaultParams(void);
     };
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif // end of RSVRG_H

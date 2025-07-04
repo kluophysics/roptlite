@@ -37,7 +37,7 @@ This is the test file to run the problem defined in WeightedLowRank.h and Weight
 
 #include "test/DriverMexProb.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testFRankESparseApprox(void);
 

@@ -38,9 +38,9 @@ This is the test file to run the problem defined in LRBlindDeconvolution.h and L
 #include "Others/fftw/fftw3.h"
 #undef abs
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
-#ifdef ROPTLIB_WITH_FFTW
+#ifdef ROPTLITE_WITH_FFTW
 
 void testCFRankQ2FBlindDecon2D(void);
 

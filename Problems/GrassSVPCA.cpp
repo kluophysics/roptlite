@@ -2,7 +2,7 @@
 #include "Problems/GrassSVPCA.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	GrassSVPCA::GrassSVPCA(Vector inB, realdp inlambda, integer inn, integer inm, integer inp)
 	{
@@ -106,4 +106,4 @@ namespace ROPTLIB{
         
         return *result;
     };
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

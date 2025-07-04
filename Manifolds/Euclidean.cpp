@@ -2,7 +2,7 @@
 #include "Manifolds/Euclidean.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	Euclidean::Euclidean(integer r, integer c, integer n, const char *type)
 	{
@@ -154,4 +154,4 @@ namespace ROPTLIB{
         *result = exix;
         return *result;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

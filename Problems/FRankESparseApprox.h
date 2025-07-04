@@ -16,7 +16,7 @@ Problem --> FRankESparseApprox
 #include "Manifolds/FixedRankE.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class FRankESparseApprox : public Problem{
 	public:
@@ -41,5 +41,5 @@ namespace ROPTLIB{
         integer lengthW;
         realdp L;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif

@@ -4,7 +4,7 @@
 #ifdef MATLAB_MEX_FILE
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	mexProblem::mexProblem(const mxArray *inf, const mxArray *ingf, const mxArray *inHess, const mxArray *inPreCon)
 	{
@@ -229,7 +229,7 @@ namespace ROPTLIB{
                 
                 mwSize mwndim = mxGetNumberOfDimensions(tmp);
                 if(mwndim > 3)
-                    mexErrMsgTxt("ROPTLIB does not support a 4-th or higher order tensor!");
+                    mexErrMsgTxt("ROPTLITE does not support a 4-th or higher order tensor!");
                 const mwSize *mwdims = mxGetDimensions(tmp);
                 integer row = mxGetM(tmp);
                 integer col = mxGetN(tmp);
@@ -266,7 +266,7 @@ namespace ROPTLIB{
                 mwSize mwndim = mxGetNumberOfDimensions(tmp);
                 const mwSize *mwdims = mxGetDimensions(tmp);
                 if(mwndim > 3)
-                    mexErrMsgTxt("ROPTLIB does not support a 4-th or higher order tensor!");
+                    mexErrMsgTxt("ROPTLITE does not support a 4-th or higher order tensor!");
                 integer row = mxGetM(tmp);
                 integer col = mxGetN(tmp);
                 integer num = (mwndim < 3) ? 1 : mwdims[2];
@@ -291,6 +291,6 @@ namespace ROPTLIB{
 		}
 		return nullptr;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 
 #endif

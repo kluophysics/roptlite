@@ -26,7 +26,7 @@ Solvers --> SolversSM --> RAMSGRADSP
 #include <algorithm>
 
 /*Define the namespace*/
-namespace ROPTLIB {
+namespace ROPTLITE {
 //	enum RAMSGRADSPLR_SCHEDULER { FIXED_RAMSGRADSPLR, DECAY_RAMSGRADSPLR, STEPSIZELENGTH_RAMSGRADSPLR};
 	class RAMSGRADSP : public SolversSMSto {
 	public:
@@ -145,6 +145,6 @@ namespace ROPTLIB {
     private:
         bool IsProdMani;
 	};
-};/*end of ROPTLIB namespace*/
+};/*end of ROPTLITE namespace*/
 
 #endif /* end of RAMSGRADSP_H */

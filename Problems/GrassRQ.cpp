@@ -2,7 +2,7 @@
 #include "Problems/GrassRQ.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	GrassRQ::GrassRQ(Vector inB, integer inn, integer inp)
 	{
@@ -36,4 +36,4 @@ namespace ROPTLIB{
         result->AlphaABaddBetaThis(-1, B, GLOBAL::N, etax, GLOBAL::N, 0);
         return *result;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

@@ -35,7 +35,7 @@ This is the test file to run the problem defined in WeightedLowRank.h and Weight
 
 #include "test/DriverMexProb.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testFRankETextureInpainting(void);
 Vector LADM(unsigned long *inir, unsigned long *injc, unsigned long *injcc, unsigned long innzmax, Vector inD, realdp inlambda, integer inm, integer inn, integer inr, 

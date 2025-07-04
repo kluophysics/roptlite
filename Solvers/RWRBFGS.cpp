@@ -2,7 +2,7 @@
 #include "Solvers/RWRBFGS.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	RWRBFGS::RWRBFGS(const Problem *prob, const Variable *initialx, LinearOPE *initialH)
 	{
@@ -159,4 +159,4 @@ namespace ROPTLIB{
             Mani->TranHInvTran(x1, eta2, x2, H, &H);
         }
     };
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

@@ -2,7 +2,7 @@
 #include "Solvers/LRTRSR1woR.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	LRTRSR1woR::LRTRSR1woR(const Problem *prob, const Variable *initialx)
 	{
@@ -672,4 +672,4 @@ namespace ROPTLIB{
         }
     };
 
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

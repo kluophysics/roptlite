@@ -2,7 +2,7 @@
 #include "Problems/FRankQ2FMatCompletion.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	FRankQ2FMatCompletion::FRankQ2FMatCompletion(unsigned long *inir, unsigned long *injc, unsigned long *injcc, realdp *invals, integer innz, integer inm, integer inn, integer inr)
 	{
@@ -101,4 +101,4 @@ namespace ROPTLIB{
         SM2.Setnullptr();
         return *result;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

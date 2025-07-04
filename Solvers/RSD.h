@@ -15,7 +15,7 @@ Solvers --> SolversSM --> SolversSMLS --> RSD
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class RSD : public SolversSMLS{
 	public:
@@ -38,5 +38,5 @@ namespace ROPTLIB{
         /*Setting parameters (member variables) to be default values */
         virtual void SetDefaultParams(void);
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of RSD_H */

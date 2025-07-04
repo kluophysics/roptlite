@@ -17,7 +17,7 @@ Solvers --> SolversSM --> SolversSMLS --> RCG
 #undef max
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	/* Riemannian nonlinear conjugate gradient formulas. It should be assigned to the member variable "RCGmethod".
 	The Euclidean formulas can be found in e.g., [NW06, Section 5.2].
@@ -76,5 +76,5 @@ namespace ROPTLIB{
 		realdp sigma;
 
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of RCG_H */

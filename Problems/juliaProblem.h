@@ -18,7 +18,7 @@ Problem
 #include "julia.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
     class juliaProblem : public Problem{
 	public:
@@ -43,7 +43,7 @@ namespace ROPTLIB{
         jl_function_t *jl_gf; /*Julia function handle of the Euclidean gradient*/
         jl_function_t *jl_Hess; /*Julia function handle of the action of the Euclidean Hessian.*/
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 
 
 #endif // end of DRIVERJULIAPROB

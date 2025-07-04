@@ -13,7 +13,7 @@ Solvers --> SolversNSM --> SolversNSMPGLS --> IRPG
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class IRPG : public SolversNSMPGLS{
 	public:
@@ -40,5 +40,5 @@ namespace ROPTLIB{
         /*Print last information in an algorithm*/
         virtual void PrintFinalInfo(void);
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of IRPG_H */

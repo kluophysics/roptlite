@@ -1,7 +1,7 @@
 
 #include "test/TestStieSPCA.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 Vector &invHV(const Vector &B, realdp alpha, const Vector &V, Vector *result)
 {

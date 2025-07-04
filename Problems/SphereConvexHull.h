@@ -19,7 +19,7 @@ Problem --> SphereConvexHull
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
     class SolversLSLPSub;
 
@@ -41,5 +41,5 @@ namespace ROPTLIB{
         Vector &(SolversNSMSub::*Hv)(const Vector &v, Vector *result);
 	};
 
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of GRASSRQ_H */

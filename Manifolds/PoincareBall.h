@@ -14,7 +14,7 @@ Manifold --> PoincareBall
 #include <cmath>
 
 /*Define the namespace*/
-namespace ROPTLIB {
+namespace ROPTLITE {
 
 	enum PoincareMetric { POINCARE_EUCLIDEAN, POINCARE_METRIC, POINCAREMETRICLENGTH };
 
@@ -124,6 +124,6 @@ namespace ROPTLIB {
 		virtual realdp DistEuc(const Variable &x1, const Variable &x2) const;
 
 	};
-};/*end of ROPTLIB namespace*/
+};/*end of ROPTLITE namespace*/
 
 #endif /* end of POINCAREBALL_H */

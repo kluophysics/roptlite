@@ -1,6 +1,6 @@
 #include "test/TestElement.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testElement(void)
 { /*This is used to test whether memory leakage happens in certain cases.*/
@@ -22,7 +22,7 @@ void testElement(void)
 //        M.GetHaarFWT().GetInvHaarFWT().Print("M4:");
     }
     
-#ifdef ROPTLIB_WITH_FFTW
+#ifdef ROPTLITE_WITH_FFTW
     {
         Vector M(4, 4, "complex"); M.RandGaussian();
         M.GetFFT2D(FFTW_FORWARD);

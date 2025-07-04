@@ -1,6 +1,6 @@
 #include "test/TestFRankE3FMatCompletion.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testFRankE3FMatCompletion(void)
 {

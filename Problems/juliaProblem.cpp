@@ -4,7 +4,7 @@
 #ifdef DRIVERJULIAPROB
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
     juliaProblem::juliaProblem(jl_function_t *inf, jl_function_t *ingf, jl_function_t *inHess)
     {
@@ -147,6 +147,6 @@ namespace ROPTLIB{
         return *result;
 	};
 
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 
 #endif // end of DRIVERJULIAPROB

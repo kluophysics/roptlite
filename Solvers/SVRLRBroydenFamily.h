@@ -14,7 +14,7 @@ by Shuguang Zhang, modified by Wen Huang
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
     
     class SVRLRBroydenFamily : public SolversSMSVRG{
     public:
@@ -120,5 +120,5 @@ namespace ROPTLIB{
         integer Currentlength; /*The current length of array S, Y and RHO*/
         integer beginidx, tempBegin; /*The starting index of S, Y and RHO at current iteration*/
     };
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif // end of RBROYDENFAMILY_H

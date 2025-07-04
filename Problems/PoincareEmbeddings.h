@@ -16,7 +16,7 @@
 #include <algorithm>
 
 /*Define the namespace*/
-namespace ROPTLIB {
+namespace ROPTLITE {
 	class PoincareEmbeddings : public Problem {
 	public:
 		PoincareEmbeddings(Vector indata, integer inn, integer inXNum, integer innegs, realdp inSampleDampening = 0.75);
@@ -62,6 +62,6 @@ namespace ROPTLIB {
 		Vector A; //Alias table
 		integer SearchNum;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 
 #endif // end of POINCAREEMBEDDINGS_H

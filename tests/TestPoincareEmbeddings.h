@@ -45,7 +45,7 @@ This is the test file for the Poincare Embeddings defined in PoincareEmbeddings.
 #include <string>
 #include <fstream>
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 /*The main test function*/
 void testPoincareEmbeddings(void);

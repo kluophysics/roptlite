@@ -15,7 +15,7 @@ Solvers --> SolversSM --> SolversSMTR --> RTRSD
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class RTRSD : public SolversSMTR{
 	public:
@@ -38,6 +38,6 @@ namespace ROPTLIB{
 		/*Set result = Eta. In other words, the Hessian approximation is just an identity*/
 		virtual Vector &HessianEta(const Vector &Eta, Vector *result);
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 
 #endif /* end of RTRSD_H */

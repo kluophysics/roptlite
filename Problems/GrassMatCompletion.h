@@ -15,7 +15,7 @@
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
     
     class GrassMatCompletion : public Problem{
     public:
@@ -42,5 +42,5 @@ namespace ROPTLIB{
         Vector &Getai(const Variable &x, const integer column, Vector *result) const;
         Vector &GetGradi(const Variable &x, const integer column, Vector *result) const;
     };
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif // end of GRASSMATCOMPLETION_H

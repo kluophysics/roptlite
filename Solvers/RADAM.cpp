@@ -1,7 +1,7 @@
 #include "Solvers/RADAM.h"
 
 /*Define the namespace*/
-namespace ROPTLIB {
+namespace ROPTLITE {
 
 	RADAM::RADAM(const Problem *prob, const Variable *initialx)
 	{

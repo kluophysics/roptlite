@@ -1,6 +1,6 @@
 #include "test/TestSFRQLyapunov.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testSFRQLyapunov(void)
 {

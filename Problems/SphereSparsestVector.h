@@ -17,7 +17,7 @@ Problem --> SphereSparsestVector
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class SphereSparsestVector : public Problem{
 	public:
@@ -33,5 +33,5 @@ namespace ROPTLIB{
 		mutable integer n;
 	};
 
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of SPHERESPARSESTVECTOR_H */

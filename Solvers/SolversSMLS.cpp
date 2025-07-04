@@ -2,7 +2,7 @@
 #include "Solvers/SolversSMLS.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	void SolversSMLS::Run(void)
 	{
@@ -971,4 +971,4 @@ namespace ROPTLIB{
             }
 		}
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

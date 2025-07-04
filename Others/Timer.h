@@ -29,8 +29,8 @@
 #define CLK_PS 1000000
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	unsigned long getTickCount(void);
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif

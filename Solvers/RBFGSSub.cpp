@@ -2,7 +2,7 @@
 #include "Solvers/RBFGSSub.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	RBFGSSub::RBFGSSub(const Problem *prob, const Variable *initialx, LinearOPE *initialH)
 	{
@@ -128,4 +128,4 @@ namespace ROPTLIB{
 	{
         UpdateDataRBFGSSub();
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

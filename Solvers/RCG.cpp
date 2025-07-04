@@ -2,7 +2,7 @@
 #include "Solvers/RCG.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	RCG::RCG(const Problem *prob, const Variable *initialx)
 	{
@@ -158,4 +158,4 @@ namespace ROPTLIB{
             }
 		}
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

@@ -15,7 +15,7 @@ Solvers --> SolversSM --> SolversSMTR --> RTRSR1
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class RTRSR1 : public SolversSMTR{
 	public:
@@ -74,6 +74,6 @@ namespace ROPTLIB{
         Vector s, y;/*the s, y, and u of current step*/
         LinearOPE B; /*The Hessian approximations for current and next iterations respectively*/
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 
 #endif /* end of RTRSR1_H */

@@ -20,7 +20,7 @@ SparseMatrix
 #include <sstream>
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
     class SparseMatrix {
     public:
@@ -84,6 +84,6 @@ namespace ROPTLIB{
 //        blas_sparse_matrix SparseM;
         bool iscomplex;
     };
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 
 #endif

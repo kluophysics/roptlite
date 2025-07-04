@@ -1,7 +1,7 @@
 
 #include "test/TestStieSoftICA.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testStieSoftICA(void)
 {

@@ -1,6 +1,6 @@
 #include "test/TestFRankESparseApprox.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testFRankESparseApprox(void)
 {

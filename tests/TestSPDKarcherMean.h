@@ -45,7 +45,7 @@ This is the test file for the Geometric mean of SPD problem defined in SPDMean.h
 /*The global head file*/
 #include "Others/def.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 /*The main test function*/
 void testSPDKarcherMean(void);

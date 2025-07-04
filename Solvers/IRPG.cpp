@@ -2,7 +2,7 @@
 #include "Solvers/IRPG.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	IRPG::IRPG(const Problem *prob, const Variable *initialx)
 	{
@@ -216,4 +216,4 @@ namespace ROPTLIB{
             printf("\n");
         }
     };
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

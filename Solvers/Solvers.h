@@ -18,7 +18,7 @@ Solvers
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	/*Specify what information will be output in the algorithm.
 	The value should be assigned to the member variable: "Debug",
@@ -184,6 +184,6 @@ namespace ROPTLIB{
 		void DeleteVariables(Vector * &Xs, integer l);
 	};
 
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 
 #endif /* end of SOLVERS_H */

@@ -2,7 +2,7 @@
 #include "Solvers/RTRNewton.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	RTRNewton::RTRNewton(const Problem *prob, const Variable *initialx)
 	{
@@ -26,4 +26,4 @@ namespace ROPTLIB{
 	{
 		return Prob->HessianEta(x1, Eta, result);
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

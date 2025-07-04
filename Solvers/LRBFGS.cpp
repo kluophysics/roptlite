@@ -2,7 +2,7 @@
 #include "Solvers/LRBFGS.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	LRBFGS::LRBFGS(const Problem *prob, const Variable *initialx)
 	{
@@ -290,4 +290,4 @@ namespace ROPTLIB{
         }
     };
 
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

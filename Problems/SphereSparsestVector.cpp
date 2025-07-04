@@ -2,7 +2,7 @@
 #include "Problems/SphereSparsestVector.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	SphereSparsestVector::SphereSparsestVector(Vector inQ)
 	{
@@ -49,4 +49,4 @@ namespace ROPTLIB{
         return *result;
 	};
 
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

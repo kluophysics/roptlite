@@ -70,7 +70,7 @@ This is the test file to check all problems.
 
 //#include "Problems/CSFRQPhaseRetrieval.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testall(void);
 /*numGradHess: 0, test both given gradient/Hessian and numerical gradient/Hessian

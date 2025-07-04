@@ -23,7 +23,7 @@ Manifold --> SymFixedRankQ
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	/*Note that not all metrics, retractions and vector transports have been done.*/
 
@@ -167,6 +167,6 @@ namespace ROPTLIB{
 		SFRankQMetric metric;
 		SFRankQVectorTransport VecTran;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 
 #endif /* end of SYMFIXEDRANKQ_H */

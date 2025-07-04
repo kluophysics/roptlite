@@ -2,7 +2,7 @@
 #include "Problems/ProdStieSumBrockett.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	ProdStieSumBrockett::ProdStieSumBrockett(Vector inB1, Vector inD1, Vector inB2, Vector inD2, Vector inB3, Vector inD3)
 	{
@@ -71,4 +71,4 @@ namespace ROPTLIB{
         
         return *result;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

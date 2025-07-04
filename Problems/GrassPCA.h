@@ -15,7 +15,7 @@
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
     
     class GrassPCA : public Problem{
     public:
@@ -40,5 +40,5 @@ namespace ROPTLIB{
         integer n;
         integer p;
     };
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif // end of EUCQUADRATIC_H

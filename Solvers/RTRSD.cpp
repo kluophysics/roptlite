@@ -2,7 +2,7 @@
 #include "Solvers/RTRSD.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	RTRSD::RTRSD(const Problem *prob, const Variable *initialx)
 	{
@@ -29,4 +29,4 @@ namespace ROPTLIB{
         *result = Eta;
         return *result;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

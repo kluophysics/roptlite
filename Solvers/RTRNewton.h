@@ -15,7 +15,7 @@ Solvers --> SolversSM --> SolversSMTR --> RTRNewton
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class RTRNewton : public SolversSMTR{
 	public:
@@ -38,6 +38,6 @@ namespace ROPTLIB{
 		/*Compute result = H[Eta], where H is the Hessian*/
 		virtual Vector &HessianEta(const Vector &Eta, Vector *result);
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 
 #endif /* end of RTRNEWTON_H */

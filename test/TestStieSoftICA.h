@@ -37,7 +37,7 @@ This is the test file to run the problem defined in StieSoftICA.h and StieSoftIC
 
 #include "Others/def.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 void testStieSoftICA(void);
 
 #endif // end of TESTSTIESOFTICA_H

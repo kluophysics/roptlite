@@ -2,7 +2,7 @@
 #include "Manifolds/Element.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
     namespace GLOBAL{
         integer IZERO = 0, IONE = 1, ITWO = 2;
@@ -1838,7 +1838,7 @@ namespace ROPTLIB{
 
     Element &Element::AlphaABaddBetaThis(realdp alpha, const SparseMatrix &A, char *transA, const Element &B, char*transB, realdp beta)
     {
-/* The sparse matrix multiplication in Matlab is more efficient. Therefore, if ROPTLIB is invoked from Matlab, then the sparse matrix
+/* The sparse matrix multiplication in Matlab is more efficient. Therefore, if ROPTLITE is invoked from Matlab, then the sparse matrix
 multiplication in Matlab is used. */
  #if defined(MATLAB_MEX_FILE) && defined(DOUBLE_PRECISION) //&& !defined(_WIN32) && !defined(_WIN64)
          CopyOnWrite();
@@ -1977,7 +1977,7 @@ multiplication in Matlab is used. */
 
     Element &Element::AlphaABaddBetaThis(realdp alpha, const Element &A, char *transA, const SparseMatrix &B, char*transB, realdp beta)
     {
-/* The sparse matrix multiplication in Matlab is more efficient. Therefore, if ROPTLIB is invoked from Matlab, then the sparse matrix
+/* The sparse matrix multiplication in Matlab is more efficient. Therefore, if ROPTLITE is invoked from Matlab, then the sparse matrix
 multiplication in Matlab is used. */
  #if defined(MATLAB_MEX_FILE) && defined(DOUBLE_PRECISION) //&& !defined(_WIN32) && !defined(_WIN64)
          CopyOnWrite();
@@ -2145,7 +2145,7 @@ multiplication in Matlab is used. */
 
     Element &Element::AlphaABaddBetaThis(realdpcomplex alpha, const SparseMatrix &A, char *transA, const Element &B, char*transB, realdpcomplex beta)
     {
-/* The sparse matrix multiplication in Matlab is more efficient. Therefore, if ROPTLIB is invoked from Matlab, then the sparse matrix
+/* The sparse matrix multiplication in Matlab is more efficient. Therefore, if ROPTLITE is invoked from Matlab, then the sparse matrix
 multiplication in Matlab is used. */
  #if defined(MATLAB_MEX_FILE) && defined(DOUBLE_PRECISION) //&& !defined(_WIN32) && !defined(_WIN64)
          CopyOnWrite();
@@ -2284,7 +2284,7 @@ multiplication in Matlab is used. */
 
     Element &Element::AlphaABaddBetaThis(realdpcomplex alpha, const Element &A, char *transA, const SparseMatrix &B, char*transB, realdpcomplex beta)
     {
-/* The sparse matrix multiplication in Matlab is more efficient. Therefore, if ROPTLIB is invoked from Matlab, then the sparse matrix
+/* The sparse matrix multiplication in Matlab is more efficient. Therefore, if ROPTLITE is invoked from Matlab, then the sparse matrix
 multiplication in Matlab is used. */
  #if defined(MATLAB_MEX_FILE) && defined(DOUBLE_PRECISION) //&& !defined(_WIN32) && !defined(_WIN64)
          CopyOnWrite();
@@ -2656,7 +2656,7 @@ multiplication in Matlab is used. */
         return (*this);
     };
 
-#ifdef ROPTLIB_WITH_FFTW
+#ifdef ROPTLITE_WITH_FFTW
     Element Element::GetFFT2D(int direction) const
     {
         assert(iscomplex && Space != nullptr);
@@ -2665,7 +2665,7 @@ multiplication in Matlab is used. */
         
         Vector result(*this);
         realdp *resultptr = result.ObtainWriteEntireData();
-        /*Note that ROPTLIB uses column-major and FFTW uses row-major, therefore the
+        /*Note that ROPTLITE uses column-major and FFTW uses row-major, therefore the
         row and column need be swapped.*/
         
 #ifdef SINGLE_PRECISION
@@ -2688,7 +2688,7 @@ multiplication in Matlab is used. */
         unsigned int flags = FFTW_ESTIMATE;
         
         realdp *resultptr = result->ObtainWriteEntireData();
-        /*Note that ROPTLIB uses column-major and FFTW uses row-major, therefore the
+        /*Note that ROPTLITE uses column-major and FFTW uses row-major, therefore the
         row and column need be swapped.*/
                 
 #ifdef SINGLE_PRECISION
@@ -4159,4 +4159,4 @@ multiplication in Matlab is used. */
 //#endif
     };
 
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

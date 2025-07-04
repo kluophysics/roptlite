@@ -1,7 +1,7 @@
 
 #include "test/TestProdStieSumBrockett.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testProdStieSumBrockett(void)
 {

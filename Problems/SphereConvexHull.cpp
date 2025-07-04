@@ -2,7 +2,7 @@
 #include "Problems/SphereConvexHull.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	SphereConvexHull::SphereConvexHull(const Manifold *inMani, Vector *inW, integer inlengthW, SolversNSMSub *insolver, Vector &(SolversNSMSub::*inHv)(const Vector &v, Vector *result))
 	{
@@ -92,4 +92,4 @@ namespace ROPTLIB{
         return *result;
 	};
 
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

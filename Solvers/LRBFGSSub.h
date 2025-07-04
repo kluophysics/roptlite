@@ -13,7 +13,7 @@ This file defines the limited-memory BFGS for locally lipschitz functions on Rie
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class LRBFGSSub : public SolversNSMSubLS{
 	public:
@@ -85,5 +85,5 @@ namespace ROPTLIB{
         integer Currentlength; /*The current length of array S, Y and RHO*/
         integer beginidx; /*The starting index of S, Y and RHO at current iteration*/
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of LRBFGSSUB_H */

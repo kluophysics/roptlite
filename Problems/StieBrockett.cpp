@@ -2,7 +2,7 @@
 #include "Problems/StieBrockett.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	StieBrockett::StieBrockett(Vector inB, Vector inD)
 	{
@@ -40,4 +40,4 @@ namespace ROPTLIB{
         D.DiagTimesM(*result, GLOBAL::R);
         return *result; /* 2 * D.GetDiagTimesM(B * etax, "R"); */
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

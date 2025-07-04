@@ -2,7 +2,7 @@
 #include "Problems/EucQuadratic.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	EucQuadratic::EucQuadratic(Vector M)
 	{
@@ -34,4 +34,4 @@ namespace ROPTLIB{
         result->AlphaABaddBetaThis(1, A, GLOBAL::N, etax, GLOBAL::N, 0);
         return *result;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

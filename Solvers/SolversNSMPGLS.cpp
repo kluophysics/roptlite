@@ -2,7 +2,7 @@
 #include "Solvers/SolversNSMPGLS.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
     SolversNSMPGLS::~SolversNSMPGLS()
     {
@@ -150,4 +150,4 @@ namespace ROPTLIB{
             }
         }
     };
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

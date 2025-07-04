@@ -1,7 +1,7 @@
 
 #include "test/TestGrassRQ.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testGrassRQ(void)
 {

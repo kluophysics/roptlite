@@ -13,7 +13,7 @@ Manifold --> Stiefel --> Sphere
 #include "Manifolds/Stiefel.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class Sphere : public Stiefel{
 	public:
@@ -93,5 +93,5 @@ namespace ROPTLIB{
 		/*Compute result = \mathcal{T} * H * \mathcal{T}^{-1}. \mathcal{T} is the parallel translation*/
 		virtual LinearOPE &ExpTranHInvTran(const Variable &x, const Vector &etax, const Variable &y, const LinearOPE &Hx, LinearOPE *result) const;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of SPHERE_H */

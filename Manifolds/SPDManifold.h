@@ -16,7 +16,7 @@ Manifold --> SPD
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
     enum SPDMetric { SPDEUCLIDEAN, SPDAFFINEINVARIANCE, SPDMETRICLENGTH };
 
@@ -156,5 +156,5 @@ namespace ROPTLIB{
 		Default: the distance under affine invariant metric: ||log(x1^{-1/2) x2 x1^{-1/2}||_F*/
 		virtual realdp DistEuc(const Variable &x1, const Variable &x2) const;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of SPDMANIFOLD_H */

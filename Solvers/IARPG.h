@@ -14,7 +14,7 @@ Solvers --> SolversNSM --> SolversNSMPGLS --> IARPG
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class IARPG : public SolversNSMPGLS{
 	public:
@@ -77,5 +77,5 @@ namespace ROPTLIB{
         
         integer numrestart;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of IARPG_H */

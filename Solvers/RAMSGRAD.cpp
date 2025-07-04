@@ -1,7 +1,7 @@
 #include "Solvers/RAMSGRAD.h"
 
 /*Define the namespace*/
-namespace ROPTLIB {
+namespace ROPTLITE {
 
 	RAMSGRAD::RAMSGRAD(const Problem *prob, const Variable *initialx)
 	{

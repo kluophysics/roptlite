@@ -2,7 +2,7 @@
 #include "Problems/FRankESparseApprox.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	FRankESparseApprox::FRankESparseApprox(Vector inA, realdp inlambda, integer inm, integer inn, integer inr, integer inlengthW)
 	{
@@ -98,4 +98,4 @@ namespace ROPTLIB{
         }
         return *result;
     };
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/

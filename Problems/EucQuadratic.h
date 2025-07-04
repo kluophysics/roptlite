@@ -14,7 +14,7 @@ Problem --> EucQuadratic
 #include "Others/def.h"
 
 /*Define the namespace*/
-namespace ROPTLIB{
+namespace ROPTLITE{
 
 	class EucQuadratic : public Problem{
 	public:
@@ -26,5 +26,5 @@ namespace ROPTLIB{
 
         Vector A;
 	};
-}; /*end of ROPTLIB namespace*/
+}; /*end of ROPTLITE namespace*/
 #endif /* end of EUCQUADRATIC_H */

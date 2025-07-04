@@ -1,7 +1,7 @@
 
 #include "test/TestObliqueSPCA.h"
 
-using namespace ROPTLIB;
+using namespace ROPTLITE;
 
 void testObliqueSPCA(void)
 {
