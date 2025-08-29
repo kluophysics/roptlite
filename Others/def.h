@@ -113,6 +113,6 @@ This is the global head file. Every file in ROPTLITE will include this file.
 typedef std::map<std::string, realdp> PARAMSMAP;
 
 /*Define the number PI*/
-#define PI 3.14159265358979323846264
+// #define PI 3.14159265358979323846264 // It's never used!!!
 
 #endif /* end of DEF_H */
