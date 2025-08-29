@@ -10,7 +10,7 @@ This is the global head file. Every file in ROPTLITE will include this file.
 //#define MATLAB_MEX_FILE//For debug---
 //#define DRIVERJULIAPROB//For debug---
 
-#define DOUBLE_PRECISION  /*SINGLE_PRECISION DOUBLE_PRECISION*/
+// #define DOUBLE_PRECISION  /*SINGLE_PRECISION DOUBLE_PRECISION*/
 //#define ROPTLITE_WITH_FFTW //When FFTW library is needed
 
 #undef real
